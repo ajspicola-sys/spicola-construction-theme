@@ -2053,72 +2053,112 @@ add_action('wp_ajax_nopriv_hwh_contact_submit', 'hwh_handle_contact_form');
 
 // -- Default email template (used when no custom template is saved) --
 function hwh_default_email_template() {
-    return '<!DOCTYPE html>
+    return <<<HTML
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>New Message</title></head>
-<body style="margin:0;padding:0;background:#f4f0f8;font-family:\'Helvetica Neue\',Arial,sans-serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f0f8;padding:40px 0;">
-    <tr><td align="center">
-      <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;border-radius:16px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.12);">
-        <tr>
-          <td style="background:linear-gradient(135deg,#0f0720 0%,#0A1628 60%,#2d0d5e 100%);padding:40px 40px 32px;text-align:center;">
-            <p style="margin:0 0 8px;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(201,169,110,0.9);">Spicola Construction</p>
-            <h1 style="margin:0;font-size:26px;font-weight:300;color:#f0ebe3;letter-spacing:1px;">New Website Message</h1>
-            <div style="width:40px;height:2px;background:linear-gradient(90deg,#F22F3A,#C9A96E);margin:16px auto 0;border-radius:2px;"></div>
-          </td>
-        </tr>
-        <tr>
-          <td style="background:#ffffff;padding:40px;">
-            <p style="margin:0 0 28px;font-size:15px;color:#555;line-height:1.6;">You have a new inquiry from your website contact form. Reply directly to this email to respond to {{first_name}}.</p>
-            <table width="100%" cellpadding="0" cellspacing="0">
-              <tr>
-                <td style="padding:0 8px 16px 0;width:50%;vertical-align:top;">
-                  <div style="background:#FFF5F5;border-radius:10px;padding:16px 18px;border-left:3px solid #F22F3A;">
-                    <p style="margin:0 0 4px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#F22F3A;font-weight:600;">Name</p>
-                    <p style="margin:0;font-size:15px;color:#0A1628;font-weight:500;">{{name}}</p>
-                  </div>
-                </td>
-                <td style="padding:0 0 16px 8px;width:50%;vertical-align:top;">
-                  <div style="background:#FFF5F5;border-radius:10px;padding:16px 18px;border-left:3px solid #F22F3A;">
-                    <p style="margin:0 0 4px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#F22F3A;font-weight:600;">Email</p>
-                    <p style="margin:0;font-size:15px;color:#0A1628;font-weight:500;"><a href="mailto:{{email}}" style="color:#F22F3A;text-decoration:none;">{{email}}</a></p>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="padding:0 8px 16px 0;vertical-align:top;">
-                  <div style="background:#FFF5F5;border-radius:10px;padding:16px 18px;border-left:3px solid #C9A96E;">
-                    <p style="margin:0 0 4px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C9A96E;font-weight:600;">Phone</p>
-                    <p style="margin:0;font-size:15px;color:#0A1628;font-weight:500;">{{phone}}</p>
-                  </div>
-                </td>
-                <td style="padding:0 0 16px 8px;vertical-align:top;">
-                  <div style="background:#FFF5F5;border-radius:10px;padding:16px 18px;border-left:3px solid #C9A96E;">
-                    <p style="margin:0 0 4px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C9A96E;font-weight:600;">Service Interest</p>
-                    <p style="margin:0;font-size:15px;color:#0A1628;font-weight:500;">{{service}}</p>
-                  </div>
-                </td>
-              </tr>
-            </table>
-            <div style="background:#FFF5F5;border-radius:10px;padding:20px 22px;margin-top:4px;border-left:3px solid #F22F3A;">
-              <p style="margin:0 0 8px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#F22F3A;font-weight:600;">Message</p>
-              <p style="margin:0;font-size:15px;color:#333;line-height:1.7;">{{message}}</p>
-            </div>
-            <div style="text-align:center;margin-top:32px;">
-              <a href="mailto:{{email}}" style="display:inline-block;background:linear-gradient(135deg,#F22F3A,#C41E27);color:#ffffff;text-decoration:none;padding:14px 36px;border-radius:50px;font-size:14px;font-weight:600;letter-spacing:0.5px;">Reply to {{first_name}} ?</a>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td style="background:#0f0720;padding:24px 40px;text-align:center;">
-            <p style="margin:0;font-size:11px;color:rgba(240,235,227,0.4);letter-spacing:1px;">Spicola Construction &middot; Tampa Bay, FL &middot; <a href="https://spicolaconstruction.com" style="color:rgba(172,19,249,0.7);text-decoration:none;">spicolaconstruction.com</a></p>
-          </td>
-        </tr>
-      </table>
-    </td></tr>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>New Website Inquiry</title>
+  <!--[if mso]>
+  <noscript>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  </noscript>
+  <![endif]-->
+</head>
+<body style="margin:0;padding:0;background-color:#F8F8F6;font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;-webkit-font-smoothing:antialiased;">
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#F8F8F6;padding:40px 16px;">
+    <tr>
+      <td align="center" style="vertical-align:top;">
+        <table width="600" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px;width:100%;background-color:#ffffff;border:1px solid #D0CFC8;border-radius:16px;overflow:hidden;box-shadow:0 12px 40px rgba(21,30,45,0.06);">
+          <!-- Header -->
+          <tr>
+            <td style="background-color:#151E2D;background:linear-gradient(135deg, #222D3F 0%, #151E2D 100%);padding:40px 40px 32px;text-align:center;border-bottom:4px solid #F22F3A;">
+              <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#FF5C64;font-family:'Montserrat', 'Helvetica Neue', Arial, sans-serif;">Spicola Construction</p>
+              <h1 style="margin:0;font-size:26px;font-weight:300;color:#ffffff;letter-spacing:1px;font-family:'Montserrat', 'Helvetica Neue', Arial, sans-serif;">New Website Inquiry</h1>
+            </td>
+          </tr>
+          <!-- Content Body -->
+          <tr>
+            <td style="background-color:#ffffff;padding:40px;vertical-align:top;">
+              <p style="margin:0 0 28px;font-size:15px;color:#222D3F;line-height:1.6;font-weight:400;">
+                You have received a new inquiry from your website contact form. Reply directly to this email to respond to <strong>{{first_name}}</strong>.
+              </p>
+              
+              <!-- Info Cards Grid -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:24px;">
+                <tr>
+                  <td width="50%" style="padding:0 8px 16px 0;vertical-align:top;">
+                    <div style="background-color:#F8F8F6;border:1px solid #D0CFC8;border-left:4px solid #F22F3A;border-radius:8px;padding:16px 18px;min-height:56px;">
+                      <p style="margin:0 0 4px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#F22F3A;font-weight:700;">Name</p>
+                      <p style="margin:0;font-size:15px;color:#151E2D;font-weight:600;">{{name}}</p>
+                    </div>
+                  </td>
+                  <td width="50%" style="padding:0 0 16px 8px;vertical-align:top;">
+                    <div style="background-color:#F8F8F6;border:1px solid #D0CFC8;border-left:4px solid #F22F3A;border-radius:8px;padding:16px 18px;min-height:56px;">
+                      <p style="margin:0 0 4px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#F22F3A;font-weight:700;">Email</p>
+                      <p style="margin:0;font-size:15px;color:#151E2D;font-weight:600;"><a href="mailto:{{email}}" style="color:#F22F3A;text-decoration:none;font-weight:600;">{{email}}</a></p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%" style="padding:0 8px 0 0;vertical-align:top;">
+                    <div style="background-color:#F8F8F6;border:1px solid #D0CFC8;border-left:4px solid #222D3F;border-radius:8px;padding:16px 18px;min-height:56px;">
+                      <p style="margin:0 0 4px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#4A5568;font-weight:700;">Phone</p>
+                      <p style="margin:0;font-size:15px;color:#151E2D;font-weight:600;">{{phone}}</p>
+                    </div>
+                  </td>
+                  <td width="50%" style="padding:0 0 0 8px;vertical-align:top;">
+                    <div style="background-color:#F8F8F6;border:1px solid #D0CFC8;border-left:4px solid #222D3F;border-radius:8px;padding:16px 18px;min-height:56px;">
+                      <p style="margin:0 0 4px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#4A5568;font-weight:700;">Service Interest</p>
+                      <p style="margin:0;font-size:15px;color:#151E2D;font-weight:600;">{{service}}</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              
+              <!-- Message Box -->
+              <div style="background-color:#F8F8F6;border:1px solid #D0CFC8;border-left:4px solid #F22F3A;border-radius:8px;padding:22px 24px;margin-top:20px;">
+                <p style="margin:0 0 8px;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#F22F3A;font-weight:700;">Message</p>
+                <p style="margin:0;font-size:15px;color:#222D3F;line-height:1.7;font-weight:400;">{{message}}</p>
+              </div>
+              
+              <!-- Reply CTA Button -->
+              <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-top:36px;text-align:center;">
+                <tr>
+                  <td align="center">
+                    <a href="mailto:{{email}}" style="display:inline-block;background-color:#F22F3A;background:linear-gradient(135deg, #F22F3A 0%, #AF2D37 100%);color:#ffffff;text-decoration:none;padding:14px 40px;border-radius:50px;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;box-shadow:0 4px 15px rgba(242,47,58,0.25);">Reply to {{first_name}}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#151E2D;padding:28px 40px;text-align:center;border-top:1px solid #222D3F;">
+              <p style="margin:0 0 6px;font-size:11px;color:#A0AEC0;letter-spacing:1px;font-family:'Montserrat', 'Helvetica Neue', Arial, sans-serif;">
+                Spicola Construction LLC &bull; Tampa Bay, FL
+              </p>
+              <p style="margin:0 0 16px;font-size:10px;color:#718096;letter-spacing:1px;font-family:'Inter', sans-serif;">
+                Licensed &amp; Insured &bull; CBC 1264021
+              </p>
+              <p style="margin:0;font-size:11px;color:#A0AEC0;letter-spacing:1px;font-family:'Montserrat', 'Helvetica Neue', Arial, sans-serif;">
+                <a href="https://spicolaconstruction.com" target="_blank" style="color:#FF5C64;text-decoration:none;font-weight:600;">spicolaconstruction.com</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
   </table>
 </body>
-</html>';
+</html>
+HTML;
 }
 
 // -- HWH Settings Page (Admin Dashboard) --------------------------

@@ -155,7 +155,7 @@ $hwh_menu_services = hwh_get_menu_services();
                 </span>
                 <span class="hwh-topbar__sep" aria-hidden="true">|</span>
                 <span class="hwh-topbar__item">
-                    Licensed &amp; Insured · CGC #123456
+                    Licensed &amp; Insured · CBC 1264021
                 </span>
             </div>
 
