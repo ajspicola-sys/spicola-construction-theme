@@ -31,7 +31,7 @@ get_header(); ?>
             <div class="about-hero__visual">
                 <div class="about-hero__mascot-glow" aria-hidden="true"></div>
                 <div class="svc-hero__float svc-hero__float--1">
-                    <strong>250+</strong>
+                    <strong>100+</strong>
                     <span>Projects Completed</span>
                 </div>
                 <div class="svc-hero__float svc-hero__float--2">
@@ -53,6 +53,7 @@ get_header(); ?>
             </div>
             <div class="about-story__layout reveal">
                 <div class="about-story__right">
+                    <!-- [TODO: confirm with client] Add the owner/founder's name. Suggested edit: replace "our founder" below with "our founder, [Owner Name]," once confirmed. Do not invent a name. -->
                     <p>Spicola Construction was born out of a passion for building things right. With over 10 years of hands-on experience in Florida's construction industry, our founder saw an opportunity to create a company that puts quality and integrity above everything else &mdash; no shortcuts, no excuses.</p>
                     <p>Word travels fast when you do great work. From custom home builds to large-scale commercial renovations, we've grown through referrals and repeat clients. Every project in our portfolio was earned through results &mdash; not advertising.</p>
                     <p>Today, Spicola Construction is a full-service general contracting firm serving Hillsborough, Pinellas, and Pasco counties. From ground-up new builds to complete interior renovations, we handle every phase of construction with the same dedication to craftsmanship that started it all.</p>
@@ -62,7 +63,7 @@ get_header(); ?>
                     <div class="about-story__chips">
                         <span class="about-story__chip">Est. 2020</span>
                         <span class="about-story__chip">Tampa Bay, FL</span>
-                        <span class="about-story__chip">CGC Licensed</span>
+                        <span class="about-story__chip">Lic. CBC 1264021</span>
                     </div>
                     <blockquote class="about-story__quote">
                         &ldquo;Quality and integrity above everything else &mdash; no shortcuts, no excuses.&rdquo;
@@ -73,7 +74,7 @@ get_header(); ?>
                             <span>Years in Business</span>
                         </div>
                         <div class="about-story__stat">
-                            <strong>250+</strong>
+                            <strong>100+</strong>
                             <span>Projects Delivered</span>
                         </div>
                         <div class="about-story__stat">
@@ -155,7 +156,7 @@ get_header(); ?>
     <section class="svc-stats" aria-label="Company stats">
         <div class="section__inner svc-stats__inner">
             <div class="svc-stat">
-                <strong class="svc-stat__num">250<span>+</span></strong>
+                <strong class="svc-stat__num">100<span>+</span></strong>
                 <span class="svc-stat__label">Projects Completed</span>
             </div>
             <div class="svc-stat__divider" aria-hidden="true"></div>

@@ -466,7 +466,7 @@ function hwh_schema_markup() {
         '@id'             => esc_url(home_url('/')) . '#website',
         'name'            => 'Spicola Construction',
         'url'             => esc_url(home_url('/')),
-        'description'     => "Tampa Bay's trusted construction company — water heater installation, emergency repairs, drain cleaning, repiping, and 24/7 service.",
+        'description'     => "Tampa Bay's trusted general contractor — new construction, remodeling, additions, roofing, and commercial build-outs.",
         'inLanguage'      => 'en-US',
         'publisher'       => [ '@id' => esc_url(home_url('/')) . '#hwh-construction' ],
         'potentialAction' => [
@@ -665,7 +665,7 @@ function hwh_create_blog_posts() {
     if (get_option('hwh_blog_created_v1')) return;
 
     // Create blog categories
-    $categories = ['Tips & Maintenance', 'Water Heater Services', 'Emergency Services', 'How-To Guides', 'HWH News'];
+    $categories = ['Tips & Maintenance', 'Construction Tips', 'Emergency Services', 'How-To Guides', 'Spicola News'];
     $cat_ids = [];
     foreach ($categories as $cat) {
         $existing = term_exists($cat, 'category');
@@ -681,134 +681,25 @@ function hwh_create_blog_posts() {
 
     $posts = [
         [
-            'title'    => 'Tank vs. Tankless Water Heaters: Which Is Right for Your Home?',
-            'category' => 'Water Heater Services',
-            'excerpt'  => 'Understanding the difference between tank and tankless water heaters to make the best choice for your Tampa Bay home.',
-            'content'  => '<h2>Choosing the Right Water Heater</h2>
-<p>One of the most common questions we hear at Spicola Construction is: "Should I get a tank or tankless water heater?" Both have advantages, and the right choice depends on your household size, budget, and hot water needs.</p>
-
-<h3>Tank Water Heaters: The Reliable Classic</h3>
-<p>Tank water heaters store 40-80 gallons of pre-heated water, ready for use whenever you need it. They have a lower upfront cost and are simple to install and maintain. However, they use energy continuously to keep the water hot, even when you are not using it.</p>
-
-<h3>Tankless Water Heaters: Endless Hot Water</h3>
-<p>Tankless units heat water on-demand as it flows through the system. They are more energy-efficient (saving up to 40% on water heating bills), last longer (20+ years vs. 10-15 for tanks), and take up far less space. The tradeoff is a higher upfront cost.</p>
-
-<h3>Which Should You Choose?</h3>
-<p>The answer depends on your specific needs. For smaller households with moderate hot water usage, a high-efficiency tank heater is often the most cost-effective choice. For larger families or homes that need simultaneous hot water at multiple fixtures, tankless is the way to go.</p>
-
-<p><strong>Not sure which is right for you?</strong> Call Spicola Construction for a free estimate and we will help you choose the best option for your home.</p>',
-        ],
-        [
-            'title'    => 'The Complete Guide to Preventing construction Emergencies',
-            'category' => 'Drain & Pipe Services',
-            'excerpt'  => 'Simple maintenance tips every Tampa Bay homeowner should know to prevent costly construction disasters.',
-            'content'  => '<h2>Prevention Is Cheaper Than Repair</h2>
-<p>Most construction emergencies do not happen overnight. They build up slowly from years of neglect. At Spicola Construction, we have seen it all, and most of it could have been prevented with basic maintenance.</p>
-
-<h3>1. Know Where Your Main Shutoff Is</h3>
-<p>If a pipe bursts, the first thing you need to do is stop the water. Every homeowner should know exactly where the main water shutoff valve is and test it annually to make sure it works.</p>
-
-<h3>2. Never Pour Grease Down the Drain</h3>
-<p>Grease solidifies in your pipes and creates stubborn clogs over time. Let it cool in a container and throw it in the trash instead.</p>
-
-<h3>3. Flush Your Water Heater Annually</h3>
-<p>Sediment builds up at the bottom of your water heater tank, reducing efficiency and shortening its lifespan. A simple annual flush takes 20 minutes and can add years to your unit.</p>
-
-<h3>4. Watch for Warning Signs</h3>
-<p>Slow drains, low water pressure, discolored water, and unexplained increases in your water bill are all early signs of construction problems. Address them early before they become emergencies.</p>
-
-<p><strong>Want peace of mind?</strong> Ask about our annual maintenance plans at Spicola Construction.</p>',
-        ],
-        [
-            'title'    => 'What to Expect When You Call a contractor',
-            'category' => 'Drain & Pipe Services',
-            'excerpt'  => 'A step-by-step walkthrough of the Spicola Construction service experience, from your first call to job completion.',
+            'title'    => 'What to Expect When You Call a Contractor',
+            'category' => 'Tips & Maintenance',
+            'excerpt'  => 'A step-by-step walkthrough of the Spicola Construction experience, from your first call to project completion.',
             'content'  => '<h2>Your First Call to Spicola Construction</h2>
-<p>If you have never called a contractor before, it is completely normal to have questions. At Spicola Construction, we have designed every step of the experience to be straightforward, transparent, and stress-free.</p>
+<p>If you have never hired a contractor before, it is completely normal to have questions. At Spicola Construction, we have designed every step of the experience to be straightforward, transparent, and stress-free.</p>
 
 <h3>Step 1: The Call</h3>
-<p>When you call (813) 732-6285, you will speak with a real person who will ask about your issue, schedule a convenient time, and give you an upfront service call fee. No surprises.</p>
+<p>When you call (813) 732-6285, you will speak with a real person who will ask about your project, schedule a convenient time, and explain how our estimates work. No surprises.</p>
 
-<h3>Step 2: The Diagnosis</h3>
-<p>Your licensed contractor arrives on time, inspects the problem, and gives you a written estimate before any work begins. We explain what is wrong, what needs to be done, and exactly what it will cost.</p>
+<h3>Step 2: The Estimate</h3>
+<p>Your licensed contractor arrives on time, reviews the scope of your project, and provides a written estimate before any work begins. We explain what needs to be done and exactly what it will cost.</p>
 
-<h3>Step 3: The Repair</h3>
-<p>Once you approve the estimate, we get to work immediately. Our contractors carry fully-stocked trucks, so most repairs can be completed in a single visit.</p>
+<h3>Step 3: The Work</h3>
+<p>Once you approve the estimate, we get to work. Our crews come prepared and organized, so your project stays on schedule and on budget from start to finish.</p>
 
 <h3>Step 4: The Walkthrough</h3>
-<p>When the job is done, your contractor walks you through everything that was done, answers your questions, and cleans up the work area completely.</p>
+<p>When the job is done, your contractor walks you through everything that was completed, answers your questions, and cleans up the work area completely.</p>
 
 <p><strong>Ready to experience the difference?</strong> Call Spicola Construction today or book online.</p>',
-        ],
-        [
-            'title'    => '5 Signs You Need to Replace Your Water Heater',
-            'category' => 'Water Heater Services',
-            'excerpt'  => 'How to tell if your water heater is on its last legs and when it makes sense to repair vs. replace.',
-            'content'  => '<h2>Is Your Water Heater Telling You Something?</h2>
-<p>Your water heater works hard every day, but it will not last forever. Here are the top 5 signs it is time for a replacement.</p>
-
-<h3>1. Age</h3>
-<p>If your tank water heater is over 10-12 years old, it is living on borrowed time. Check the serial number on the manufacturer label to find the production date.</p>
-
-<h3>2. Rusty or Discolored Water</h3>
-<p>Brown or rusty water coming from your hot water tap usually means the inside of the tank is corroding. This is a sign of imminent failure.</p>
-
-<h3>3. Strange Noises</h3>
-<p>Banging, rumbling, or popping sounds from your water heater indicate heavy sediment buildup. This makes the unit work harder and can lead to leaks.</p>
-
-<h3>4. Leaking Around the Base</h3>
-<p>Any moisture or pooling water around the base of your water heater means the tank integrity is compromised. This requires immediate attention.</p>
-
-<h3>5. Not Enough Hot Water</h3>
-<p>If you are running out of hot water faster than usual, or it takes forever to heat up, the heating elements or tank capacity may no longer meet your needs.</p>
-
-<p><strong>Noticing any of these signs?</strong> Call Spicola Construction for a free assessment and same-day replacement options.</p>',
-        ],
-        [
-            'title'    => 'Why Tampa Bay Homes Need Annual construction Inspections',
-            'category' => 'Water Heater Services',
-            'excerpt'  => 'Florida homes face unique construction challenges. Here is why an annual inspection can save you thousands.',
-            'content'  => '<h2>Florida construction Is Different</h2>
-<p>Tampa Bay homes face unique construction challenges that homes in other parts of the country do not. From hard water mineral buildup to shifting sandy soil that stresses underground pipes, our climate and geology put extra wear on your construction system.</p>
-
-<h3>What a Professional Inspection Covers</h3>
-<p>During an annual construction inspection at Spicola Construction, our licensed contractors check:</p>
-<ul>
-<li><strong>Water heater</strong> - condition, age, sediment levels, anode rod, and temperature settings</li>
-<li><strong>Supply lines</strong> - checking for leaks, corrosion, and water pressure</li>
-<li><strong>Drain lines</strong> - flow testing and camera inspection if needed</li>
-<li><strong>Fixtures</strong> - faucets, toilets, and shut-off valves for leaks and proper operation</li>
-<li><strong>Water quality</strong> - hardness testing and filtration recommendations</li>
-</ul>
-
-<h3>The Cost of Skipping Inspections</h3>
-<p>A small leak you cannot see can waste thousands of gallons of water per year and cause mold, rot, and structural damage. A $150 inspection today can prevent a $15,000 repair tomorrow.</p>
-
-<p><strong>Protect your home.</strong> Schedule your annual construction inspection with Spicola Construction today.</p>',
-        ],
-        [
-            'title'    => 'Hard Water in Tampa Bay: What It Does to Your construction',
-            'category' => 'Drain & Pipe Services',
-            'excerpt'  => 'Tampa Bay has some of the hardest water in Florida. Learn how it affects your pipes, fixtures, and appliances.',
-            'content'  => '<h2>The Hard Truth About Tampa Bay Water</h2>
-<p>If you have ever noticed white crusty buildup on your faucets or shower heads, you have seen hard water deposits firsthand. Tampa Bay water contains high levels of calcium and magnesium minerals that wreak havoc on your construction over time.</p>
-
-<h3>How Hard Water Damages Your Home</h3>
-<p>Hard water mineral deposits build up inside your pipes, water heater, dishwasher, and washing machine. Over time, this reduces water flow, decreases appliance efficiency, and shortens the lifespan of everything it touches.</p>
-
-<h3>Signs of Hard Water Problems</h3>
-<ul>
-<li>White or chalky buildup on faucets and shower heads</li>
-<li>Spots on dishes and glassware after washing</li>
-<li>Dry skin and hair after showering</li>
-<li>Reduced water pressure over time</li>
-<li>Water heater making popping or rumbling sounds</li>
-</ul>
-
-<h3>The Solution: Water Softener Installation</h3>
-<p>A whole-house water softener removes the excess minerals before they reach your fixtures and appliances. It extends the life of your construction, improves water quality, and reduces cleaning time.</p>
-
-<p><strong>Tired of hard water?</strong> Call Spicola Construction for a free water quality test and softener installation estimate.</p>',
         ],
     ];
 
@@ -840,12 +731,10 @@ add_action('init', 'hwh_create_blog_posts');
 function hwh_create_services() {
     if (get_option('hwh_services_created_v2')) return;
 
-    // 3 broad categories
-    $categories = [
-        'Water Heater Services'    => 'Professional water heater installation, repair, and maintenance for residential and commercial properties.',
-        'Drain & Pipe Services'    => 'Expert drain cleaning, pipe repair, sewer line service, and camera inspections.',
-        'Emergency & General'      => 'Emergency repairs, general construction maintenance, and comprehensive home construction solutions.',
-    ];
+    // Legacy plumbing service catalog removed during the construction rebrand.
+    // Spicola Construction's real services are seeded by hwh_create_services_v3()
+    // below, so this older seeder intentionally creates nothing.
+    $categories = [];
 
     $cat_ids = [];
     foreach ($categories as $name => $desc) {
@@ -860,26 +749,7 @@ function hwh_create_services() {
         }
     }
 
-    $services = [
-        ['title' => 'Water Heater Repair',      'icon' => '', 'category' => 'Water Heater Services', 'excerpt' => 'Fast, reliable water heater repair for all tank and tankless models. Same-day service available across Tampa Bay.'],
-        ['title' => 'Water Heater Installation', 'icon' => '', 'category' => 'Water Heater Services', 'excerpt' => 'Upgrade your home with a new high-efficiency water heater. We install tank and tankless units from top brands with same-day availability.'],
-        ['title' => 'Tankless Water Heaters',    'icon' => '', 'category' => 'Water Heater Services', 'excerpt' => 'Endless hot water with a tankless upgrade. We sell, install, and service all major brands across Tampa Bay.'],
-        ['title' => 'Drain Cleaning',            'icon' => '', 'category' => 'Water Heater Services', 'excerpt' => 'Professional drain cleaning for kitchen, bathroom, and main sewer lines using hydro-jetting and camera inspection.'],
-        ['title' => 'Leak Detection',            'icon' => '', 'category' => 'Drain & Pipe Services', 'excerpt' => 'Advanced electronic and camera-based leak detection to find hidden leaks without destroying your walls or floors.'],
-        ['title' => 'Pipe Repair',               'icon' => '', 'category' => 'Drain & Pipe Services', 'excerpt' => 'Expert pipe repair and replacement for burst, corroded, or leaking pipes. Emergency service available 24/7 across Tampa Bay.'],
-        ['title' => 'Whole-Home Repiping',       'icon' => '', 'category' => 'Drain & Pipe Services', 'excerpt' => 'Complete whole-home repiping using durable, modern materials. Protect your home from aging galvanized or corroded pipes.'],
-        ['title' => 'Toilet Repair',             'icon' => '', 'category' => 'Drain & Pipe Services', 'excerpt' => 'Toilet running, leaking, or not flushing? We repair and replace all toilet brands with same-day service.'],
-        ['title' => 'Faucet Installation',       'icon' => '', 'category' => 'Drain & Pipe Services', 'excerpt' => 'Professional faucet installation, repair, and replacement for kitchen and bathroom fixtures.'],
-        ['title' => 'Garbage Disposal',          'icon' => '', 'category' => 'Drain & Pipe Services', 'excerpt' => 'Garbage disposal jammed, leaking, or not working? We repair and install all major brands quickly and affordably.'],
-        ['title' => 'Emergency contractor',         'icon' => '', 'category' => 'Emergency & General',   'excerpt' => '24/7 emergency construction service for burst pipes, major leaks, sewer backups, and no-hot-water situations.'],
-        ['title' => 'Sewer & Water Line',        'icon' => '', 'category' => 'Emergency & General',   'excerpt' => 'Expert sewer and water main line inspection, repair, and replacement. We resolve blockages and breaks fast.'],
-        ['title' => 'Water Filtration',          'icon' => '', 'category' => 'Emergency & General',   'excerpt' => 'Whole-house water filtration and softener systems for cleaner, better-tasting water. Free water quality testing.'],
-        ['title' => 'Sump Pump',                 'icon' => '', 'category' => 'Emergency & General',   'excerpt' => 'Sump pump installation, repair, and replacement to protect your home from flooding and water damage.'],
-        ['title' => 'Gas Line Service',          'icon' => '', 'category' => 'Emergency & General',   'excerpt' => 'Licensed gas line installation, repair, and leak detection for residential and commercial properties.'],
-        ['title' => 'Backflow Prevention',       'icon' => '', 'category' => 'Emergency & General',   'excerpt' => 'Professional backflow preventer installation, testing, and annual certification to protect your water supply.'],
-        ['title' => 'Slab Leak Repair',          'icon' => '', 'category' => 'Emergency & General',   'excerpt' => 'Slab leak detection and repair using minimally invasive tunneling and rerouting techniques.'],
-        ['title' => 'Camera Inspection',         'icon' => '', 'category' => 'Emergency & General',   'excerpt' => 'Video camera pipe inspection to diagnose clogs, cracks, and root intrusion without digging.'],
-    ];
+    $services = [];
 
     foreach ($services as $service) {
         $existing = get_page_by_title($service['title'], OBJECT, 'service');
@@ -1269,8 +1139,8 @@ add_filter( 'rank_math/frontend/canonical',     'hwh_purge_staging_canonical', 9
 function hwh_fix_meta_descriptions( $description ) {
     // The generic fallback we want to replace
     $generic_descriptions = [
-        "Spicola Construction — Tampa Bay's premier construction company. Water heaters, drain cleaning, emergency construction, and more.",
-        "Spicola Construction — Tampa Bay's trusted construction experts for water heaters, drain cleaning, leak detection, and 24/7 emergency service.",
+        "Spicola Construction — Tampa Bay's premier general contractor. New construction, remodeling, additions, roofing, and more.",
+        "Spicola Construction — Tampa Bay's trusted construction experts for new builds, remodels, additions, roofing, and commercial build-outs.",
     ];
 
     $is_generic = empty( $description ) || in_array( trim( $description ), $generic_descriptions, true );
@@ -1279,7 +1149,7 @@ function hwh_fix_meta_descriptions( $description ) {
     if ( is_page() ) {
         $slug = get_post_field( 'post_name', get_queried_object_id() );
         $page_metas = [
-            'about'               => 'Meet the Spicola Construction team — licensed Tampa Bay contractors with 300+ jobs completed. Honest pricing, same-day service, and a satisfaction guarantee.',
+            'about'               => 'Meet the Spicola Construction team — licensed Tampa Bay contractors with 100+ projects completed. Honest pricing, quality craftsmanship, and a satisfaction guarantee.',
             'contact'             => 'Need a contractor in Tampa? Contact Spicola Construction — call (813) 732-6285 or book online for same-day service across Tampa Bay.',
             'service-areas'       => 'Spicola Construction serves Tampa, St. Pete, Clearwater, Brandon, Wesley Chapel, and all of Tampa Bay. Fast, local construction — same-day available.',
             'privacy-policy'      => 'Read the Spicola Construction privacy policy. Learn how we collect, use, and protect your personal information.',
@@ -1293,7 +1163,7 @@ function hwh_fix_meta_descriptions( $description ) {
 
     // -- Blog page (archive) --
     if ( is_home() && $is_generic ) {
-        return 'construction tips, water heater guides, and expert advice from Spicola Construction in Tampa Bay. Learn how to protect your home and save money.';
+        return 'Construction tips, remodeling guides, and expert advice from Spicola Construction in Tampa Bay. Learn how to plan, build, and protect your home.';
     }
 
     // -- Category archives --
@@ -1338,7 +1208,7 @@ function hwh_fix_meta_descriptions( $description ) {
 
     // -- Services archive --
     if ( is_post_type_archive( 'service' ) && $is_generic ) {
-        return 'Professional construction services in Tampa Bay — water heater repair, drain cleaning, leak detection, pipe repair, and 24/7 emergency service. Call today.';
+        return 'Professional construction services in Tampa Bay — new construction, remodeling, additions, roofing, concrete, and commercial build-outs. Call today.';
     }
 
     return $description;
@@ -1513,8 +1383,8 @@ function hwh_team_meta_html($post) {
     <div class="hwh-team-row">
         <div class="hwh-team-field">
             <label for="team_specialties">Specialties</label>
-            <input type="text" id="team_specialties" name="team_specialties" value="<?php echo esc_attr($specialties); ?>" placeholder="Water Heaters, Drain Cleaning, Repiping">
-            <p class="description">Comma-separated specialties shown as tags, e.g. "Water Heaters, Drain Cleaning, Repiping"</p>
+            <input type="text" id="team_specialties" name="team_specialties" value="<?php echo esc_attr($specialties); ?>" placeholder="Remodeling, Roofing, Concrete">
+            <p class="description">Comma-separated specialties shown as tags, e.g. "Remodeling, Roofing, Concrete"</p>
         </div>
     </div>
     <?php
@@ -1883,7 +1753,7 @@ function hwh_custom_title($title) {
         $title['site']  = 'Spicola Construction';
         return $title;
     }
-    // Service pages: "Water Heater Repair in Tampa Bay, FL | Spicola Construction"
+    // Service pages: "Kitchen Remodeling in Tampa Bay, FL | Spicola Construction"
     if (is_singular('service')) {
         $custom = get_post_meta(get_the_ID(), '_hwh_seo_title', true);
         $title['title'] = !empty($custom) ? $custom : get_the_title() . ' in Tampa Bay, FL';
@@ -1944,7 +1814,7 @@ function hwh_faq_schema() {
     $faqs = [
         ['q' => 'Is there a minimum commitment?', 'a' => 'We ask for a minimum annual commitment to get the most out of your Maintenance Plan membership. After that, you can continue month-to-month or cancel anytime.'],
         ['q' => 'Do my credits expire?', 'a' => 'No! Your banked credits never expire as long as your membership is active. If you cancel, unused credits remain available for 90 days.'],
-        ['q' => 'What can I use my credits on?', 'a' => 'Your maintenance plan benefits can be used on any construction service we offer — water heater repairs, drain cleaning, repiping, fixture installation, and more.'],
+        ['q' => 'What can I use my credits on?', 'a' => 'Your maintenance plan benefits can be used on any construction service we offer — remodeling, additions, roofing, concrete work, repairs, and more.'],
         ['q' => 'Can I share my credits with friends or family?', 'a' => 'Absolutely! You can gift your credits to friends and family members.'],
         ['q' => 'How much should I set as my monthly deposit?', 'a' => 'Our plans start at affordable annual rates. During your free estimate, we\'ll help you find the perfect amount.'],
     ];
@@ -2718,7 +2588,7 @@ function hwh_homepage_faq_schema() {
     $faqs = [
         [
             'q' => 'What services does Spicola Construction offer in Tampa Bay?',
-            'a' => 'Spicola Construction in Tampa Bay, FL offers water heater repair and installation, drain cleaning, pipe repair, whole-home repiping, leak detection, slab leak repair, gas line service, water filtration, sump pump installation, and 24/7 emergency construction service.',
+            'a' => 'Spicola Construction in Tampa Bay, FL offers new home construction, home additions, kitchen and bathroom remodeling, roofing, concrete and flatwork, commercial build-outs, tenant improvements, and storm damage repair.',
         ],
         [
             'q' => 'Who is the provider at Spicola Construction?',
@@ -2860,45 +2730,19 @@ function hwh_allow_ai_crawlers($output, $public) {
 
 // =============================================================================
 // AI SEARCH VISIBILITY — HOMEPAGE REVIEW SCHEMA
-// Outputs 5 real-sounding sample reviews as Review entities on the homepage.
-// AI tools use Review schema to assess business authority and sentiment.
-// UPDATE these with real Google review content when available.
+// Emits Review schema on the homepage ONLY from real, verified customer reviews.
+// The previous fabricated sample reviews were removed during the construction
+// rebrand. Add real Google review content to $reviews below to re-enable this.
 // =============================================================================
 function hwh_review_schema() {
     if ( ! is_front_page() ) return;
 
-    $reviews = [
-        [
-            'author'  => 'Sarah M.',
-            'rating'  => 5,
-            'date'    => '2026-02-15',
-            'body'    => 'Spicola Construction did an amazing job on our kitchen remodel. Professional crew, great communication throughout the project, and the finished result exceeded our expectations. Highly recommend them for any construction project in Tampa.',
-        ],
-        [
-            'author'  => 'James R.',
-            'rating'  => 5,
-            'date'    => '2026-03-10',
-            'body'    => 'We hired Spicola for a complete home addition and they delivered on time and on budget. The quality of work is outstanding. Their team was respectful of our property and kept us informed every step of the way.',
-        ],
-        [
-            'author'  => 'Mike T.',
-            'rating'  => 5,
-            'date'    => '2026-01-18',
-            'body'    => 'Best contractor in the Tampa Bay area. Fair pricing, excellent craftsmanship, and they stand behind their work. We have used them for two projects now and will continue to call them for everything.',
-        ],
-        [
-            'author'  => 'Linda P.',
-            'rating'  => 5,
-            'date'    => '2026-02-05',
-            'body'    => 'Spicola Construction handled our complete bathroom renovation beautifully. The crew was professional, clean, and finished ahead of schedule. Could not be happier with the results.',
-        ],
-        [
-            'author'  => 'David K.',
-            'rating'  => 5,
-            'date'    => '2026-02-10',
-            'body'    => 'Had Spicola do a commercial build-out for our new office space. Everything was done to code, on time, and their attention to detail was impressive. 10 out of 10 recommend.',
-        ],
-    ];
+    // [TODO: confirm with client] Populate with REAL, verified reviews only.
+    // Never add fabricated reviews — publishing fake Review schema is a
+    // credibility and legal risk.
+    $reviews = [];
+
+    if ( empty( $reviews ) ) return; // No schema is output until real reviews exist.
 
     $schema_reviews = [];
     foreach ($reviews as $r) {

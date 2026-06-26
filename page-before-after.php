@@ -21,14 +21,14 @@ get_header(); ?>
             <!-- Filter tabs -->
             <div class="gallery-filters reveal" role="group" aria-label="Filter by project type">
                 <button class="gallery-filter is-active" data-filter="all">All</button>
-                <button class="gallery-filter" data-filter="water-heater">Water Heaters</button>
-                <button class="gallery-filter" data-filter="pipe-repair">Pipe Repair</button>
-                <button class="gallery-filter" data-filter="bathroom">Bathroom</button>
-                <button class="gallery-filter" data-filter="drain">Drain Cleaning</button>
+                <button class="gallery-filter" data-filter="remodel">Remodeling</button>
+                <button class="gallery-filter" data-filter="additions">Additions</button>
+                <button class="gallery-filter" data-filter="roofing">Roofing</button>
+                <button class="gallery-filter" data-filter="exterior">Exterior</button>
             </div>
 
             <div class="gallery-grid reveal">
-                <div class="gallery-card" data-category="water-heater">
+                <div class="gallery-card" data-category="remodel">
                     <div class="gallery-card__images before-after-slider">
                         <div class="gallery-card__before">
                             <span class="gallery-card__label">Before</span>
@@ -48,12 +48,12 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="gallery-card__info">
-                        <h3 class="gallery-card__title">Tank Water Heater Replacement</h3>
-                        <p class="gallery-card__desc">Removed corroded 15-year-old water heater and installed new 50-gallon energy-efficient unit. Same-day service.</p>
+                        <h3 class="gallery-card__title">Kitchen Remodel</h3>
+                        <p class="gallery-card__desc">Full kitchen renovation with new cabinetry, countertops, and lighting. Completed on schedule and on budget.</p>
                     </div>
                 </div>
 
-                <div class="gallery-card" data-category="pipe-repair">
+                <div class="gallery-card" data-category="remodel">
                     <div class="gallery-card__images before-after-slider">
                         <div class="gallery-card__before">
                             <span class="gallery-card__label">Before</span>
@@ -73,12 +73,12 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="gallery-card__info">
-                        <h3 class="gallery-card__title">Burst Pipe Emergency Repair</h3>
-                        <p class="gallery-card__desc">Repaired a burst copper pipe under the kitchen sink. Minimal drywall damage, completed in under 2 hours.</p>
+                        <h3 class="gallery-card__title">Bathroom Renovation</h3>
+                        <p class="gallery-card__desc">Complete bathroom remodel with new tile, custom vanity, and modern fixtures. Finished in one week.</p>
                     </div>
                 </div>
 
-                <div class="gallery-card" data-category="bathroom">
+                <div class="gallery-card" data-category="additions">
                     <div class="gallery-card__images before-after-slider">
                         <div class="gallery-card__before">
                             <span class="gallery-card__label">Before</span>
@@ -98,12 +98,12 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="gallery-card__info">
-                        <h3 class="gallery-card__title">Full Bathroom Repiping</h3>
-                        <p class="gallery-card__desc">Complete repipe of outdated galvanized pipes to PEX throughout a master bathroom. 1-day turnaround.</p>
+                        <h3 class="gallery-card__title">Primary Suite Addition</h3>
+                        <p class="gallery-card__desc">Built a fully permitted 400 sq ft primary suite addition, matched seamlessly to the existing home.</p>
                     </div>
                 </div>
 
-                <div class="gallery-card" data-category="drain">
+                <div class="gallery-card" data-category="roofing">
                     <div class="gallery-card__images before-after-slider">
                         <div class="gallery-card__before">
                             <span class="gallery-card__label">Before</span>
@@ -123,12 +123,12 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="gallery-card__info">
-                        <h3 class="gallery-card__title">Main Line Drain Clearing</h3>
-                        <p class="gallery-card__desc">Hydro-jetting a severely clogged main sewer line. Camera inspection confirmed full clearance.</p>
+                        <h3 class="gallery-card__title">Roof Replacement</h3>
+                        <p class="gallery-card__desc">Replaced an aging roof with new architectural shingles. Passed final inspection with no callbacks.</p>
                     </div>
                 </div>
 
-                <div class="gallery-card" data-category="water-heater">
+                <div class="gallery-card" data-category="exterior">
                     <div class="gallery-card__images before-after-slider">
                         <div class="gallery-card__before">
                             <span class="gallery-card__label">Before</span>
@@ -148,12 +148,12 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="gallery-card__info">
-                        <h3 class="gallery-card__title">Tankless Water Heater Upgrade</h3>
-                        <p class="gallery-card__desc">Replaced an old tank heater with a compact Navien tankless unit. Endless hot water and 40% lower energy bills.</p>
+                        <h3 class="gallery-card__title">Exterior Siding & Paint</h3>
+                        <p class="gallery-card__desc">Refreshed the home's exterior with new siding and a full repaint for lasting curb appeal.</p>
                     </div>
                 </div>
 
-                <div class="gallery-card" data-category="pipe-repair">
+                <div class="gallery-card" data-category="exterior">
                     <div class="gallery-card__images before-after-slider">
                         <div class="gallery-card__before">
                             <span class="gallery-card__label">Before</span>
@@ -173,8 +173,8 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="gallery-card__info">
-                        <h3 class="gallery-card__title">Slab Leak Repair</h3>
-                        <p class="gallery-card__desc">Located and repaired a hidden slab leak using electronic detection. Minimal floor disruption.</p>
+                        <h3 class="gallery-card__title">Concrete Patio & Walkway</h3>
+                        <p class="gallery-card__desc">Poured a new stamped-concrete patio and walkway, transforming an unused backyard space.</p>
                     </div>
                 </div>
             </div>
@@ -187,9 +187,9 @@ get_header(); ?>
 
     <section class="cta-section" aria-label="Request service">
         <div class="cta-section__inner reveal">
-            <span class="cta-section__label">Need Quality Plumbing Work?</span>
+            <span class="cta-section__label">Need Quality Construction Work?</span>
             <h2 class="cta-section__title">Your Home<br>Deserves the Best.</h2>
-            <p class="cta-section__text">Call us or book online — we'll dispatch a licensed plumber to your door fast.</p>
+            <p class="cta-section__text">Call us or book online — our licensed team is ready to bring your project to life.</p>
             <div class="cta-section__actions">
                 <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="btn btn--primary btn--lg">Request Service</a>
             </div>

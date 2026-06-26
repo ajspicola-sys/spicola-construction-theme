@@ -325,7 +325,7 @@ if ($popup_active && !empty($popup_expiry) && strtotime($popup_expiry) && strtot
 if ($popup_active) :
     $p_badge    = esc_html(get_theme_mod('hwh_popup_badge',    'Limited Time'));
     $p_title    = esc_html(get_theme_mod('hwh_popup_title',    '$50 Off Your First Service'));
-    $p_text     = esc_html(get_theme_mod('hwh_popup_text',     'Book your first plumbing service and save $50. Available for new customers in Tampa Bay.'));
+    $p_text     = esc_html(get_theme_mod('hwh_popup_text',     'Book your first construction service and save $50. Available for new customers in Tampa Bay.'));
     $p_code     = esc_html(get_theme_mod('hwh_popup_code',     ''));
     $p_btn_text = esc_html(get_theme_mod('hwh_popup_btn_text', 'Claim Offer Now'));
     $p_btn_url  = esc_url(get_theme_mod('hwh_popup_btn_url',   '/contact/'));

@@ -124,7 +124,7 @@ get_header(); ?>
             <div class="sc-services__header-right">
                 <div class="sc-services__stats">
                     <div class="sc-services__stat">
-                        <span class="sc-services__stat-num">250+</span>
+                        <span class="sc-services__stat-num">100+</span>
                         <span class="sc-services__stat-label">Projects Completed</span>
                     </div>
                     <div class="sc-services__stat">
@@ -395,7 +395,7 @@ get_header(); ?>
             </div>
             <div class="hwh-why__stats reveal">
                 <div class="hwh-why__stat-card">
-                    <span class="hwh-why__stat-num">500+</span>
+                    <span class="hwh-why__stat-num">100+</span>
                     <span class="hwh-why__stat-lbl">Projects Completed</span>
                 </div>
                 <div class="hwh-why__stat-card">

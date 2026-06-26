@@ -19,7 +19,7 @@ $current_cat = get_queried_object();
             <div class="blog-hero__orb blog-hero__orb--2"></div>
         </div>
         <div class="blog-hero__inner">
-            <span class="section__label">HWH Blog</span>
+            <span class="section__label">Spicola Blog</span>
             <h1 class="blog-hero__title"><?php echo esc_html( $current_cat->name ); ?></h1>
             <?php if ( $current_cat->description ) : ?>
                 <p class="blog-hero__desc"><?php echo esc_html( $current_cat->description ); ?></p>
@@ -127,12 +127,12 @@ $current_cat = get_queried_object();
     <!-- CTA -->
     <section class="cta-section" aria-label="Request service">
         <div class="cta-section__inner reveal">
-            <span class="cta-section__label">Have a Plumbing Issue?</span>
+            <span class="cta-section__label">Have a Construction Project?</span>
             <h2 class="cta-section__title">Need Help?<br>We're On Our Way.</h2>
-            <p class="cta-section__text">Call us or book online &mdash; fast, reliable plumbing service across Tampa Bay.</p>
+            <p class="cta-section__text">Call us or book online &mdash; fast, reliable construction service across Tampa Bay.</p>
             <div class="cta-section__actions">
                 <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="hwh-btn hwh-btn--red hwh-btn--lg">Request Service</a>
-                <a href="tel:+18134275862" class="hwh-btn hwh-btn--ghost hwh-btn--lg">Call (813) 732-6285 (75862)</a>
+                <a href="tel:+18137326285" class="hwh-btn hwh-btn--ghost hwh-btn--lg">Call (813) 732-6285</a>
             </div>
         </div>
     </section>

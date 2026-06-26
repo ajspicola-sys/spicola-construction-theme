@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="page-hero__inner">
             <span class="section__label">Curated Collection</span>
             <h1 class="page-hero__title">Our Products</h1>
-            <p class="page-hero__desc">Professional-grade plumbing products and equipment we trust and recommend.</p>
+            <p class="page-hero__desc">Professional-grade construction products and equipment we trust and recommend.</p>
         </div>
     </section>
 
@@ -99,7 +99,7 @@ get_header(); ?>
         <div class="cta-section__inner reveal">
             <span class="cta-section__label">Need Help Choosing?</span>
             <h2 class="cta-section__title">Need Help<br>Choosing?</h2>
-            <p class="cta-section__text">Our team can recommend the right products for your plumbing needs. Call us anytime.</p>
+            <p class="cta-section__text">Our team can recommend the right products for your project needs. Call us anytime.</p>
             <div class="cta-section__actions">
                 <a href="/contact/" class="btn btn--primary btn--lg">Request Service</a>
             </div>

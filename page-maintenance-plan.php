@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="page-hero__inner">
             <span class="section__label">Annual Protection</span>
             <h1 class="page-hero__title">Maintenance<br><em>Plan</em></h1>
-            <p class="page-hero__desc">The easiest way to protect your home's plumbing — scheduled maintenance, priority service, and exclusive member savings.</p>
+            <p class="page-hero__desc">The easiest way to protect your home — scheduled maintenance, priority service, and exclusive member savings.</p>
             <div class="page-hero__actions">
                 <a href="/contact/" class="btn btn--primary btn--lg">Join Today</a>
             </div>
@@ -30,12 +30,12 @@ get_header(); ?>
                 <div class="maint-plan-step">
                     <div class="maint-plan-step__num">01</div>
                     <h3>Sign Up</h3>
-                    <p>Choose your plan level and we'll schedule your first annual plumbing inspection right away.</p>
+                    <p>Choose your plan level and we'll schedule your first annual home maintenance inspection right away.</p>
                 </div>
                 <div class="maint-plan-step">
                     <div class="maint-plan-step__num">02</div>
                     <h3>Scheduled Maintenance</h3>
-                    <p>We'll come out for annual inspections, flush your water heater, and check all fixtures and connections.</p>
+                    <p>We'll come out for annual inspections and check your home's key systems, finishes, and connections.</p>
                 </div>
                 <div class="maint-plan-step">
                     <div class="maint-plan-step__num">03</div>
@@ -57,7 +57,7 @@ get_header(); ?>
                 <div class="maint-plan-benefit">
                     <span class="maint-plan-benefit__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 1 0 7H6"/></svg></span>
                     <h3>15% Off All Repairs</h3>
-                    <p>Members save 15% on all plumbing repairs and installations, year-round.</p>
+                    <p>Members save 15% on all repairs and installations, year-round.</p>
                 </div>
                 <div class="maint-plan-benefit">
                     <span class="maint-plan-benefit__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
@@ -67,7 +67,7 @@ get_header(); ?>
                 <div class="maint-plan-benefit">
                     <span class="maint-plan-benefit__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
                     <h3>Annual Inspection</h3>
-                    <p>A full plumbing inspection every year to catch small problems before they become big ones.</p>
+                    <p>A full home inspection every year to catch small problems before they become big ones.</p>
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@ get_header(); ?>
                     <h3>Annual Plan</h3>
                     <ul>
                         <li>Plans run on a <strong>12-month annual cycle</strong>.</li>
-                        <li>Includes one full plumbing inspection and water heater flush per year.</li>
+                        <li>Includes one full home maintenance inspection per year.</li>
                     </ul>
                 </div>
 
@@ -130,7 +130,7 @@ get_header(); ?>
             <p class="cta-section__text">Prevent costly repairs, skip the wait on service calls, and save on every job. Call us to sign up today.</p>
             <div class="cta-section__actions">
                 <a href="/contact/" class="btn btn--primary btn--lg">Request Service</a>
-                <a href="tel:+18134275862" class="btn btn--outline btn--lg">Call (813) 732-6285 (75862)</a>
+                <a href="tel:+18137326285" class="btn btn--outline btn--lg">Call (813) 732-6285</a>
             </div>
         </div>
     </section>

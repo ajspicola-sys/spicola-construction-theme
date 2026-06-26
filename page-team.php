@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="page-hero__inner">
             <span class="section__label">Our Experts</span>
             <h1 class="page-hero__title">Meet the Team</h1>
-            <p class="page-hero__desc">Licensed, experienced plumbing professionals dedicated to honest work and quality service.</p>
+            <p class="page-hero__desc">Licensed, experienced construction professionals dedicated to honest work and quality service.</p>
         </div>
     </section>
 
@@ -107,7 +107,7 @@ get_header(); ?>
         <div class="cta-section__inner reveal">
             <span class="cta-section__label">Book With Us</span>
             <h2 class="cta-section__title">Ready to Meet<br>Our Team?</h2>
-            <p class="cta-section__text">Call us or book online — we'll dispatch a licensed plumber to your door fast.</p>
+            <p class="cta-section__text">Call us or book online — our licensed team is ready to help with your next project.</p>
             <div class="cta-section__actions">
                 <a href="/contact/" class="btn btn--primary btn--lg">Request Service</a>
             </div>

@@ -28,9 +28,9 @@ $blog_query = new WP_Query( array(
             <div class="blog-hero__orb blog-hero__orb--2"></div>
         </div>
         <div class="blog-hero__inner">
-            <span class="section__label">HWH Blog</span>
-            <h1 class="blog-hero__title">Plumbing Tips &amp;<br><em>Expert Insights</em></h1>
-            <p class="blog-hero__desc">Helpful guides, maintenance tips, and expert plumbing advice from the Spicola Construction team.</p>
+            <span class="section__label">Spicola Blog</span>
+            <h1 class="blog-hero__title">Construction Tips &amp;<br><em>Expert Insights</em></h1>
+            <p class="blog-hero__desc">Helpful guides, maintenance tips, and expert construction advice from the Spicola Construction team.</p>
         </div>
     </section>
 
@@ -171,7 +171,7 @@ $blog_query = new WP_Query( array(
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
                 </div>
                 <h2 class="blog-empty__title">Coming Soon</h2>
-                <p class="blog-empty__text">Plumbing tips, maintenance guides, and expert advice — coming soon from the Spicola Construction team.</p>
+                <p class="blog-empty__text">Construction tips, maintenance guides, and expert advice — coming soon from the Spicola Construction team.</p>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="hwh-btn hwh-btn--red">Back to Home</a>
             </div>
 
@@ -185,12 +185,12 @@ $blog_query = new WP_Query( array(
     <!-- CTA -->
     <section class="cta-section" aria-label="Request service">
         <div class="cta-section__inner reveal">
-            <span class="cta-section__label">Have a Plumbing Issue?</span>
+            <span class="cta-section__label">Have a Construction Project?</span>
             <h2 class="cta-section__title">Need Help?<br>We're On Our Way.</h2>
-            <p class="cta-section__text">Call us or book online &mdash; fast, reliable plumbing service across Tampa Bay.</p>
+            <p class="cta-section__text">Call us or book online &mdash; fast, reliable construction service across Tampa Bay.</p>
             <div class="cta-section__actions">
                 <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="hwh-btn hwh-btn--red hwh-btn--lg">Request Service</a>
-                <a href="tel:+18134275862" class="hwh-btn hwh-btn--ghost hwh-btn--lg">Call (813) 732-6285 (75862)</a>
+                <a href="tel:+18137326285" class="hwh-btn hwh-btn--ghost hwh-btn--lg">Call (813) 732-6285</a>
             </div>
         </div>
     </section>
