@@ -31,62 +31,73 @@ get_header(); ?>
 </script>
 
 <!-- ══════════════════════════════════════════════════════
-     HERO — Full-screen brand hero
+     HERO — Two-box card hero (white panel + framed cutout)
      ══════════════════════════════════════════════════════ -->
-<section class="sc-hero" id="hero" aria-label="Spicola Construction — Tampa Bay's trusted general contractor">
-    <div class="sc-hero__glow"     aria-hidden="true"></div>
-    <div class="sc-hero__grid-bg" aria-hidden="true"></div>
-    <div class="sc-hero__inner">
-        <span class="sc-hero__label">Tampa Bay's Trusted General Contractor</span>
-        <h1 class="sc-hero__title">
-            Building Tampa Bay's<br>
-            <em>Future</em>, One Project<br>
-            at a Time.
-        </h1>
-        <p class="sc-hero__sub">
-            Licensed &amp; insured residential and commercial construction,
-            remodeling, roofing, and renovation services across
-            Hillsborough, Pinellas &amp; Pasco counties.
-        </p>
-        <div class="sc-hero__actions">
-            <a href="tel:+18137326285" class="sc-hero__btn sc-hero__btn--primary">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                Call (813) 732-6285
-            </a>
-            <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="sc-hero__btn sc-hero__btn--ghost">
-                Get a Free Quote →
-            </a>
+<section class="sch-hero" id="hero" aria-label="Spicola Construction — Tampa Bay's trusted general contractor">
+    <div class="sch-card">
+        <div class="sch-panel">
+            <p class="sch-tagline">Licensed &amp; insured general contractor serving Hillsborough, Pinellas &amp; Pasco counties</p>
+            <h1 class="sch-title">Building<br>Tampa Bay's<br>Future</h1>
+            <div class="sch-cta">
+                <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="hwh-btn hwh-btn--red">Get a Free Quote</a>
+                <a href="tel:+18137326285" class="sch-call">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    (813) 732-6285
+                </a>
+            </div>
         </div>
-        <div class="sc-hero__badges">
-            <span class="sc-hero__badge">✔ Licensed CGC</span>
-            <span class="sc-hero__badge">✔ Fully Insured</span>
-            <span class="sc-hero__badge">✔ 10+ Years Experience</span>
-            <span class="sc-hero__badge">✔ Free Estimates</span>
+        <div class="sch-frame">
+            <img class="sch-guy"
+                 src="https://spicolaconstruction.com/wp-content/uploads/2026/07/SPICOLA-HERO-GUY-1.png"
+                 alt="Spicola Construction contractor on a Tampa Bay job site"
+                 loading="eager" decoding="async" fetchpriority="high">
         </div>
     </div>
 </section>
 
 <style>
-/* ── Hero ── */
-.sc-hero{position:relative;min-height:700px;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% 50%,#1a2d45 0%,#0A1628 70%);overflow:hidden;padding:clamp(6rem,10vw,10rem) 0 clamp(4rem,6vw,7rem)}
-.sc-hero__glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(46,143,232,.22) 0%,transparent 60%);pointer-events:none}
-.sc-hero__grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
-.sc-hero__inner{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 clamp(1.25rem,1rem + 2vw,3rem);text-align:center}
-.sc-hero__label{display:inline-block;font-family:'Montserrat',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase;color:#2E8FE8;margin-bottom:1.5rem;padding-bottom:.6rem;position:relative}
-.sc-hero__label::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:3px;width:100%;background:linear-gradient(90deg,transparent,#2E8FE8,transparent);border-radius:2px}
-.sc-hero__title{font-family:'Montserrat',sans-serif;font-size:clamp(2.6rem,5.5vw,5rem);font-weight:900;color:#fff;line-height:1.1;margin:0 0 1.5rem;letter-spacing:-.02em}
-.sc-hero__title em{font-style:normal;color:#2E8FE8}
-.sc-hero__sub{font-size:clamp(1rem,1.4vw,1.2rem);color:rgba(255,255,255,.55);line-height:1.75;max-width:620px;margin:0 auto 2.5rem}
-.sc-hero__actions{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-bottom:2.5rem}
-.sc-hero__btn{display:inline-flex;align-items:center;gap:.6rem;font-family:'Montserrat',sans-serif;font-size:.95rem;font-weight:700;letter-spacing:.04em;text-decoration:none;padding:.9rem 2rem;border-radius:10px;transition:all .35s ease}
-.sc-hero__btn--primary{background:#1A6FBF;color:#fff;border:2px solid #1A6FBF;box-shadow:0 4px 20px rgba(26,111,191,.35)}
-.sc-hero__btn--primary:hover{background:#155fa0;border-color:#155fa0;color:#fff;box-shadow:0 8px 32px rgba(26,111,191,.55);transform:translateY(-2px)}
-.sc-hero__btn--ghost{background:transparent;color:rgba(255,255,255,.9);border:2px solid rgba(255,255,255,.25)}
-.sc-hero__btn--ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5);color:#fff;transform:translateY(-2px)}
-.sc-hero__badges{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem}
-.sc-hero__badge{font-size:.72rem;font-weight:600;color:rgba(255,255,255,.55);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:30px;padding:.4rem 1rem;letter-spacing:.04em;transition:color .3s,border-color .3s}
-.sc-hero__badge:hover{color:rgba(255,255,255,.85);border-color:rgba(255,255,255,.25)}
-@media(max-width:600px){.sc-hero__title{font-size:clamp(2.2rem,9vw,3.2rem)}.sc-hero__actions{flex-direction:column;align-items:center}}
+/* ── Hero: two connected boxes on a job-site photo card ── */
+.sch-hero{--sch-bw:clamp(14px,calc(14px + (100vw - 1280px) * .0125),22px);padding:28px 48px 60px}
+.sch-card{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:1120/400;max-width:1760px;margin:0 auto;background:linear-gradient(0deg,rgba(15,36,64,.5),rgba(15,36,64,.5)),url('https://spicolaconstruction.com/wp-content/uploads/2026/07/AdobeStock_323695209-scaled.jpeg') center/cover no-repeat;background-color:#45566e}
+/* left box — solid white, holds the copy; square right edge joins the frame */
+.sch-panel{position:absolute;top:6%;bottom:6%;left:2.5%;width:41%;background:#fff;border-radius:26px 0 0 26px;z-index:2}
+/* right box — see-through, thick white border; left edge tucks under the panel */
+.sch-frame{position:absolute;top:6%;left:42%;right:2.5%;height:88%;border:var(--sch-bw) solid #fff;border-radius:0 26px 26px 0;z-index:1}
+/* cutout guy — centered in the frame, feet on its inner bottom edge, hat pops over the top border */
+.sch-guy{position:absolute;left:50%;transform:translateX(-50%);bottom:0;height:106%;width:auto;max-width:82%;object-fit:contain;object-position:bottom center;pointer-events:none}
+.sch-tagline{position:absolute;top:10%;left:7.5%;max-width:62%;font-family:'Inter',sans-serif;font-size:clamp(12px,.95vw,15px);line-height:1.65;font-weight:500;color:#2b2b2b;margin:0}
+.sch-title{position:absolute;left:7.5%;bottom:25%;max-width:88%;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4.9vw,72px);line-height:.98;text-transform:uppercase;letter-spacing:.01em;color:#0d0d0d;margin:0}
+.sch-cta{position:absolute;left:7.5%;bottom:8%;display:flex;align-items:center;gap:1.1rem}
+.sch-call{display:inline-flex;align-items:center;gap:.45rem;font-family:'Inter',sans-serif;font-size:.85rem;font-weight:700;color:#0F2440;text-decoration:none;white-space:nowrap;transition:color .2s ease}
+.sch-call:hover{color:#F22F3A}
+
+/* mid-size laptops: shorter card needs a smaller headline */
+@media(min-width:861px) and (max-width:1150px){
+  .sch-hero{padding:24px 32px 48px}
+  .sch-card{min-height:350px}
+  .sch-title{font-size:clamp(28px,4.1vw,46px)}
+  .sch-cta{gap:.8rem}
+  .sch-cta .hwh-btn{padding:.7rem 1.4rem;font-size:.75rem}
+}
+
+/* tablets & phones: stack — framed photo on top, white panel below, still one connected shape */
+@media(max-width:860px){
+  .sch-hero{padding:16px 16px 40px}
+  .sch-card{aspect-ratio:auto;height:auto;display:flex;flex-direction:column;padding:44px 14px 14px;border-radius:20px}
+  .sch-frame{position:relative;inset:auto;order:1;width:auto;height:clamp(240px,62vw,340px);border-width:10px;border-radius:18px 18px 0 0}
+  .sch-guy{height:110%;max-width:88%}
+  .sch-panel{position:relative;inset:auto;order:2;width:auto;margin-top:-1px;border-radius:0 0 18px 18px;padding:24px 22px 26px}
+  .sch-tagline{position:static;max-width:none;margin:0 0 14px;font-size:12px}
+  .sch-title{position:static;max-width:none;margin:0 0 20px;font-size:clamp(34px,10.5vw,48px)}
+  .sch-cta{position:static;flex-wrap:wrap;gap:.8rem}
+}
+
+/* small phones */
+@media(max-width:420px){
+  .sch-hero{padding:12px 10px 32px}
+  .sch-frame{border-width:8px}
+  .sch-cta .hwh-btn{padding:.75rem 1.5rem;font-size:.78rem}
+}
 </style>
 
 <!-- ══════════════════════════════════════════════════════

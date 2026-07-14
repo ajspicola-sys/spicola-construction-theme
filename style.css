@@ -10344,7 +10344,7 @@ footer.hwh-foot { background: #0A1628; color: rgba(255,255,255,0.7); font-family
 
 /* Logo */
 .hwh-nav__logo { display:flex; align-items:center; flex-shrink:0; text-decoration:none; }
-.hwh-nav__logo-img { height:65px; width:auto; transition:filter .3s ease; }
+.hwh-nav__logo-img { height:44px; width:auto; transition:filter .3s ease; }
 .hwh-nav__logo:hover .hwh-nav__logo-img { filter:drop-shadow(0 0 10px rgba(242,47,58,.3)); }
 
 /* Nav links */
@@ -12190,7 +12190,7 @@ footer.hwh-foot { background: #0A1628; color: rgba(255,255,255,0.7); font-family
   .hwh-topbar__search-input { width: 120px; }
 
   /* Logo slightly smaller */
-  .hwh-nav__logo-img { height: 52px; }
+  .hwh-nav__logo-img { height: 40px; }
 
   /* Adjust site-main so content clears two-layer header */
   .site-main { padding-top: 100px; }
@@ -12202,7 +12202,7 @@ footer.hwh-foot { background: #0A1628; color: rgba(255,255,255,0.7); font-family
   .hwh-topbar__inner { flex-wrap: wrap; gap: 0.4rem; }
   .hwh-topbar__search { display: none; }
   .hwh-topbar__social { display: none; }
-  .hwh-nav__logo-img { height: 46px; }
+  .hwh-nav__logo-img { height: 38px; }
   .site-main { padding-top: 88px; }
 }
 
@@ -12210,7 +12210,7 @@ footer.hwh-foot { background: #0A1628; color: rgba(255,255,255,0.7); font-family
   /* On very small phones, topbar only shows phone number */
   .hwh-topbar__item--live { display: none; }
   .hwh-topbar__right { display: none; }
-  .hwh-nav__logo-img { height: 40px; }
+  .hwh-nav__logo-img { height: 34px; }
   .hwh-nav__call { display: none; }
   .site-main { padding-top: 82px; }
 }
