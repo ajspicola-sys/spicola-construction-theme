@@ -58,7 +58,7 @@ get_header(); ?>
 <style>
 /* ── Hero: two connected boxes on a job-site photo card ── */
 .sch-hero{--sch-bw:clamp(14px,calc(14px + (100vw - 1280px) * .0125),22px);padding:28px 48px 60px}
-.sch-card{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:1120/460;background:linear-gradient(0deg,rgba(15,36,64,.5),rgba(15,36,64,.5)),url('https://spicolaconstruction.com/wp-content/uploads/2026/07/AdobeStock_323695209-scaled.jpeg') center/cover no-repeat;background-color:#45566e}
+.sch-card{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:1120/400;max-width:1760px;margin:0 auto;background:linear-gradient(0deg,rgba(15,36,64,.5),rgba(15,36,64,.5)),url('https://spicolaconstruction.com/wp-content/uploads/2026/07/AdobeStock_323695209-scaled.jpeg') center/cover no-repeat;background-color:#45566e}
 /* left box — solid white, holds the copy; square right edge joins the frame */
 .sch-panel{position:absolute;top:6%;bottom:6%;left:2.5%;width:41%;background:#fff;border-radius:26px 0 0 26px;z-index:2}
 /* right box — see-through, thick white border; left edge tucks under the panel */
