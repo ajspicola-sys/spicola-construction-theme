@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spicola — New Hero + Why Us Card Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--brand:#F22F3A;--brand-dark:#AF2D37;--brand-navy:#222D3F;--bg-cream:#F8F8F6}
+body{font-family:'Inter',sans-serif;background:#fff}
+/* shared theme bits pulled from style.css */
+.hwh-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 2rem;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:700;letter-spacing:.04em;text-decoration:none;border-radius:9999px;border:2px solid transparent;cursor:pointer;transition:all .3s ease;white-space:nowrap}
+.hwh-btn--lg{padding:1.05rem 2.4rem;font-size:.9rem}
+.hwh-btn--red{background:#F22F3A;color:#fff;border-color:#F22F3A;box-shadow:0 6px 24px rgba(242,47,58,.35)}
+.hwh-btn--red:hover{background:#AF2D37;border-color:#AF2D37;transform:translateY(-2px);box-shadow:0 10px 32px rgba(242,47,58,.45);color:#fff}
+.hwh-why__list{display:flex;flex-direction:column;gap:1.5rem;margin:2rem 0;list-style:none;padding:0}
+.hwh-why__item{display:flex;gap:1rem;align-items:flex-start}
+.hwh-why__check{width:28px;height:28px;background:var(--brand);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:900;flex-shrink:0;margin-top:2px}
+.hwh-why__item strong{display:block;font-size:.95rem;font-weight:800;color:#222D3F;margin-bottom:.2rem}
+.hwh-why__item p{font-size:.85rem;color:rgba(34,45,63,.6);line-height:1.6;margin:0}
+/* slim CTA bar (context between the two sections) */
+.sc-hero-slim{background:var(--bg-cream,#F8F8F6);padding:1.5rem 0}
+.sc-hero-slim__inner{max-width:1280px;margin:0 auto;padding:0 clamp(1.25rem,1rem + 2vw,3rem);text-align:center}
+.sc-hero-slim__text{font-family:'Montserrat',sans-serif;font-size:clamp(1rem,1.2vw,1.15rem);font-weight:600;color:var(--brand-navy,#222D3F);margin:0;letter-spacing:.01em}
+.sc-hero-slim__highlight{color:#fff;background:var(--brand,#F22F3A);padding:.45rem 1.2rem;border-radius:9999px;text-decoration:none;font-weight:700;margin-left:.5rem;display:inline-block}
+.divider{background:#0A1628;color:rgba(255,255,255,.5);text-align:center;padding:4rem 1rem;font-family:'Montserrat',sans-serif;font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:.75rem}
+
+/* ── Big hero: full-bleed navy over the job-site photo, cutout guy on the right ── */
+.sc-bighero{position:relative;overflow:hidden;background:linear-gradient(100deg,rgba(10,22,40,.97) 0%,rgba(10,22,40,.88) 42%,rgba(15,36,64,.62) 100%),url('https://spicolaconstruction.com/wp-content/uploads/2026/07/AdobeStock_323695209-scaled.jpeg') center/cover no-repeat;background-color:#0A1628}
+.sc-bighero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.sc-bighero__inner{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 clamp(1.25rem,1rem + 2vw,3rem);display:flex;align-items:stretch;gap:2rem;min-height:clamp(540px,74vh,760px)}
+.sc-bighero__content{flex:1 1 58%;align-self:center;padding:clamp(3.5rem,7vh,5.5rem) 0}
+.sc-bighero__badge{display:inline-flex;align-items:center;gap:.55rem;font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);border:1.5px solid rgba(255,255,255,.18);border-radius:9999px;padding:.55rem 1.1rem;margin:0 0 1.75rem;backdrop-filter:blur(4px)}
+.sc-bighero__dot{width:8px;height:8px;border-radius:50%;background:var(--brand,#F22F3A);box-shadow:0 0 10px rgba(242,47,58,.8);flex-shrink:0}
+.sc-bighero__title{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(3rem,7.2vw,6.25rem);line-height:.96;text-transform:uppercase;letter-spacing:.01em;color:#fff;margin:0}
+.sc-bighero__title em{font-style:normal;color:var(--brand,#F22F3A);text-shadow:0 0 40px rgba(242,47,58,.35)}
+.sc-bighero__sub{font-family:'Inter',sans-serif;font-size:clamp(.95rem,1.1vw,1.1rem);line-height:1.7;font-weight:500;color:rgba(255,255,255,.65);max-width:480px;margin:1.5rem 0 2.25rem}
+.sc-bighero__cta{display:flex;align-items:center;flex-wrap:wrap;gap:1.25rem}
+.sc-bighero__call{display:inline-flex;align-items:center;gap:.5rem;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:700;color:#fff;text-decoration:none;white-space:nowrap;transition:color .2s ease}
+.sc-bighero__call:hover{color:var(--brand,#F22F3A)}
+.sc-bighero__ticks{display:flex;flex-wrap:wrap;gap:.6rem 1.75rem;list-style:none;margin:2.25rem 0 0;padding:1.5rem 0 0;border-top:1px solid rgba(255,255,255,.12)}
+.sc-bighero__ticks li{display:inline-flex;align-items:center;gap:.5rem;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:600;color:rgba(255,255,255,.75);white-space:nowrap}
+.sc-bighero__ticks li span{color:var(--brand,#F22F3A);font-size:.75rem}
+.sc-bighero__visual{flex:1 1 42%;position:relative;align-self:flex-end;display:flex;justify-content:center;min-width:0}
+.sc-bighero__glow{position:absolute;left:50%;bottom:-10%;transform:translateX(-50%);width:min(34vw,480px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(242,47,58,.28) 0%,rgba(242,47,58,.08) 45%,transparent 70%);pointer-events:none}
+.sc-bighero__guy{position:relative;display:block;height:clamp(380px,58vh,600px);width:auto;max-width:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45));pointer-events:none}
+@media(max-width:860px){
+  .sc-bighero__inner{flex-direction:column;gap:0;min-height:0}
+  .sc-bighero__content{align-self:flex-start;padding:clamp(2.75rem,8vw,4rem) 0 .5rem}
+  .sc-bighero__badge{font-size:.62rem;letter-spacing:.1em}
+  .sc-bighero__title{font-size:clamp(2.9rem,11.5vw,4.25rem)}
+  .sc-bighero__ticks{gap:.5rem 1.25rem;margin-top:1.75rem;padding-top:1.25rem}
+  .sc-bighero__visual{align-self:center;width:100%;margin-top:1rem}
+  .sc-bighero__guy{height:clamp(260px,60vw,380px)}
+  .sc-bighero__glow{width:min(70vw,340px)}
+}
+@media(max-width:420px){
+  .sc-bighero__cta .hwh-btn{padding:.8rem 1.6rem;font-size:.78rem}
+  .sc-bighero__call{font-size:.85rem}
+}
+
+/* ── Why Choose Us: the two connected boxes on a job-site photo card ── */
+.schw{--schw-bw:clamp(12px,1.2vw,20px);padding:clamp(3.5rem,5.5vw,6rem) clamp(1rem,3vw,3rem);background:#fff}
+.schw-card{position:relative;display:flex;align-items:stretch;max-width:1280px;margin:0 auto;border-radius:26px;overflow:hidden;padding:clamp(16px,2.2vw,30px);background:linear-gradient(0deg,rgba(15,36,64,.55),rgba(15,36,64,.55)),url('https://spicolaconstruction.com/wp-content/uploads/2026/07/AdobeStock_323695209-scaled.jpeg') center/cover no-repeat;background-color:#45566e;box-shadow:0 18px 50px rgba(15,36,64,.18)}
+.schw-panel{width:52%;background:#fff;border-radius:20px 0 0 20px;padding:clamp(1.75rem,3.2vw,3.25rem);position:relative;z-index:2}
+.schw-frame{flex:1;border:var(--schw-bw) solid #fff;border-left:0;border-radius:0 20px 20px 0;display:flex;align-items:center;justify-content:center;padding:clamp(1.25rem,2.5vw,2.5rem);position:relative;z-index:1;min-width:0}
+.schw-label{display:inline-block;font-family:'Inter',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brand,#F22F3A);margin-bottom:.9rem}
+.schw-title{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(1.9rem,3.2vw,3.1rem);line-height:1.02;text-transform:uppercase;letter-spacing:.01em;color:#0d0d0d;margin:0 0 1rem}
+.schw-desc{font-family:'Inter',sans-serif;font-size:.92rem;line-height:1.7;font-weight:500;color:rgba(34,45,63,.65);margin:0 0 1.75rem;max-width:440px}
+.schw-panel .hwh-why__list{margin:0 0 2rem}
+.schw-stats{display:grid;grid-template-columns:1fr 1fr;gap:clamp(.75rem,1.4vw,1.15rem);width:100%;max-width:440px}
+.schw-stat{background:rgba(255,255,255,.94);backdrop-filter:blur(4px);border-radius:14px;padding:clamp(1.15rem,1.8vw,1.6rem) 1rem;text-align:center;transition:transform .3s ease}
+.schw-stat:hover{transform:translateY(-3px)}
+.schw-stat--accent{background:var(--brand,#F22F3A)}
+.schw-stat-num{display:block;font-family:'Montserrat',sans-serif;font-size:clamp(1.7rem,2.4vw,2.3rem);font-weight:800;line-height:1;color:var(--brand-navy,#222D3F)}
+.schw-stat-lbl{display:block;font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(34,45,63,.55);margin-top:.5rem}
+.schw-stat--accent .schw-stat-num,.schw-stat--accent .schw-stat-lbl{color:#fff}
+@media(max-width:860px){
+  .schw{padding:clamp(2.5rem,7vw,3.5rem) 16px}
+  .schw-card{flex-direction:column;border-radius:20px;padding:14px}
+  .schw-panel{width:auto;border-radius:18px 18px 0 0;padding:1.75rem 1.5rem 2rem}
+  .schw-frame{border-left:var(--schw-bw) solid #fff;border-top:0;border-radius:0 0 18px 18px;border-width:10px;padding:1.5rem 1.25rem}
+  .schw-stats{max-width:none}
+}
+</style>
+</head>
+<body>
+
+<section class="sc-bighero" id="hero">
+    <div class="sc-bighero__inner">
+        <div class="sc-bighero__content">
+            <p class="sc-bighero__badge"><span class="sc-bighero__dot"></span>Licensed &amp; Insured General Contractor — Hillsborough, Pinellas &amp; Pasco</p>
+            <h1 class="sc-bighero__title">Building<br><em>Tampa Bay's</em><br>Future</h1>
+            <p class="sc-bighero__sub">Residential &amp; commercial construction, remodeling, and renovation — quality craftsmanship and honest pricing, done right the first time.</p>
+            <div class="sc-bighero__cta">
+                <a href="#" class="hwh-btn hwh-btn--red hwh-btn--lg">Get a Free Quote</a>
+                <a href="tel:+18137326285" class="sc-bighero__call">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    (813) 732-6285
+                </a>
+            </div>
+            <ul class="sc-bighero__ticks">
+                <li><span>✔</span> Free Estimates</li>
+                <li><span>✔</span> On Time, On Budget</li>
+                <li><span>✔</span> 10+ Years Experience</li>
+            </ul>
+        </div>
+        <div class="sc-bighero__visual">
+            <div class="sc-bighero__glow"></div>
+            <img class="sc-bighero__guy" src="https://spicolaconstruction.com/wp-content/uploads/2026/07/SPICOLA-HERO-GUY-1.png" alt="Spicola Construction contractor">
+        </div>
+    </div>
+</section>
+
+<section class="sc-hero-slim">
+    <div class="sc-hero-slim__inner">
+        <p class="sc-hero-slim__text">Ready to start your next project?
+            <a href="#" class="sc-hero-slim__highlight">Give us a call →</a>
+        </p>
+    </div>
+</section>
+
+<div class="divider">· · · services carousel (dark navy) sits here · · ·</div>
+
+<section class="schw" id="why-us">
+    <div class="schw-card">
+        <div class="schw-panel">
+            <span class="schw-label">The Spicola Difference</span>
+            <h2 class="schw-title">Why Tampa Bay<br>Chooses Us</h2>
+            <p class="schw-desc">We built our reputation one project at a time — delivering quality craftsmanship, honest pricing, and work that stands the test of time.</p>
+            <ul class="hwh-why__list">
+                <li class="hwh-why__item"><span class="hwh-why__check">✔</span><div><strong>Licensed General Contractor</strong><p>Fully licensed CGC and insured for residential and commercial projects in Florida.</p></div></li>
+                <li class="hwh-why__item"><span class="hwh-why__check">✔</span><div><strong>Transparent Pricing</strong><p>Detailed estimates before work begins. No surprises, no change-order games.</p></div></li>
+                <li class="hwh-why__item"><span class="hwh-why__check">✔</span><div><strong>10+ Years Experience</strong><p>10+ years of construction expertise across residential, commercial, and renovation projects.</p></div></li>
+                <li class="hwh-why__item"><span class="hwh-why__check">✔</span><div><strong>On Time, On Budget</strong><p>We respect your timeline and your investment — no delays, no excuses.</p></div></li>
+            </ul>
+            <a href="#" class="hwh-btn hwh-btn--red">Meet Our Team →</a>
+        </div>
+        <div class="schw-frame">
+            <div class="schw-stats">
+                <div class="schw-stat"><span class="schw-stat-num">100+</span><span class="schw-stat-lbl">Projects Completed</span></div>
+                <div class="schw-stat"><span class="schw-stat-num">50+</span><span class="schw-stat-lbl">5-Star Reviews</span></div>
+                <div class="schw-stat schw-stat--accent"><span class="schw-stat-num">10+</span><span class="schw-stat-lbl">Years Experience</span></div>
+                <div class="schw-stat"><span class="schw-stat-num">100%</span><span class="schw-stat-lbl">Satisfaction Guaranteed</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

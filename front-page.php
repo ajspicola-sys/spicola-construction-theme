@@ -31,23 +31,30 @@ get_header(); ?>
 </script>
 
 <!-- ══════════════════════════════════════════════════════
-     HERO — Two-box card hero (white panel + framed cutout)
+     HERO — Full-width dark navy, cutout contractor + big type
      ══════════════════════════════════════════════════════ -->
-<section class="sch-hero" id="hero" aria-label="Spicola Construction — Tampa Bay's trusted general contractor">
-    <div class="sch-card">
-        <div class="sch-panel">
-            <p class="sch-tagline">Licensed &amp; insured general contractor serving Hillsborough, Pinellas &amp; Pasco counties</p>
-            <h1 class="sch-title">Building<br>Tampa Bay's<br>Future</h1>
-            <div class="sch-cta">
-                <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="hwh-btn hwh-btn--red">Get a Free Quote</a>
-                <a href="tel:+18137326285" class="sch-call">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+<section class="sc-bighero" id="hero" aria-label="Spicola Construction — Tampa Bay's trusted general contractor">
+    <div class="sc-bighero__inner">
+        <div class="sc-bighero__content">
+            <p class="sc-bighero__badge"><span class="sc-bighero__dot" aria-hidden="true"></span>Licensed &amp; Insured General Contractor — Hillsborough, Pinellas &amp; Pasco</p>
+            <h1 class="sc-bighero__title">Building<br><em>Tampa Bay's</em><br>Future</h1>
+            <p class="sc-bighero__sub">Residential &amp; commercial construction, remodeling, and renovation — quality craftsmanship and honest pricing, done right the first time.</p>
+            <div class="sc-bighero__cta">
+                <a href="<?php echo esc_url(home_url('/contact/')); ?>" class="hwh-btn hwh-btn--red hwh-btn--lg">Get a Free Quote</a>
+                <a href="tel:+18137326285" class="sc-bighero__call">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                     (813) 732-6285
                 </a>
             </div>
+            <ul class="sc-bighero__ticks" aria-label="Trust points">
+                <li><span aria-hidden="true">✔</span> Free Estimates</li>
+                <li><span aria-hidden="true">✔</span> On Time, On Budget</li>
+                <li><span aria-hidden="true">✔</span> 10+ Years Experience</li>
+            </ul>
         </div>
-        <div class="sch-frame">
-            <img class="sch-guy"
+        <div class="sc-bighero__visual">
+            <div class="sc-bighero__glow" aria-hidden="true"></div>
+            <img class="sc-bighero__guy"
                  src="https://spicolaconstruction.com/wp-content/uploads/2026/07/SPICOLA-HERO-GUY-1.png"
                  alt="Spicola Construction contractor on a Tampa Bay job site"
                  loading="eager" decoding="async" fetchpriority="high">
@@ -56,47 +63,43 @@ get_header(); ?>
 </section>
 
 <style>
-/* ── Hero: two connected boxes on a job-site photo card ── */
-.sch-hero{--sch-bw:clamp(14px,calc(14px + (100vw - 1280px) * .0125),22px);padding:28px 48px 60px}
-.sch-card{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:1120/400;max-width:1760px;margin:0 auto;background:linear-gradient(0deg,rgba(15,36,64,.5),rgba(15,36,64,.5)),url('https://spicolaconstruction.com/wp-content/uploads/2026/07/AdobeStock_323695209-scaled.jpeg') center/cover no-repeat;background-color:#45566e}
-/* left box — solid white, holds the copy; square right edge joins the frame */
-.sch-panel{position:absolute;top:6%;bottom:6%;left:2.5%;width:41%;background:#fff;border-radius:26px 0 0 26px;z-index:2}
-/* right box — see-through, thick white border; left edge tucks under the panel */
-.sch-frame{position:absolute;top:6%;left:42%;right:2.5%;height:88%;border:var(--sch-bw) solid #fff;border-radius:0 26px 26px 0;z-index:1}
-/* cutout guy — centered in the frame, feet on its inner bottom edge, hat pops over the top border */
-.sch-guy{position:absolute;left:50%;transform:translateX(-50%);bottom:0;height:106%;width:auto;max-width:82%;object-fit:contain;object-position:bottom center;pointer-events:none}
-.sch-tagline{position:absolute;top:10%;left:7.5%;max-width:62%;font-family:'Inter',sans-serif;font-size:clamp(12px,.95vw,15px);line-height:1.65;font-weight:500;color:#2b2b2b;margin:0}
-.sch-title{position:absolute;left:7.5%;bottom:25%;max-width:88%;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(32px,4.9vw,72px);line-height:.98;text-transform:uppercase;letter-spacing:.01em;color:#0d0d0d;margin:0}
-.sch-cta{position:absolute;left:7.5%;bottom:8%;display:flex;align-items:center;gap:1.1rem}
-.sch-call{display:inline-flex;align-items:center;gap:.45rem;font-family:'Inter',sans-serif;font-size:.85rem;font-weight:700;color:#0F2440;text-decoration:none;white-space:nowrap;transition:color .2s ease}
-.sch-call:hover{color:#F22F3A}
+/* ── Big hero: full-bleed navy over the job-site photo, cutout guy on the right ── */
+.sc-bighero{position:relative;overflow:hidden;background:linear-gradient(100deg,rgba(10,22,40,.97) 0%,rgba(10,22,40,.88) 42%,rgba(15,36,64,.62) 100%),url('https://spicolaconstruction.com/wp-content/uploads/2026/07/AdobeStock_323695209-scaled.jpeg') center/cover no-repeat;background-color:#0A1628}
+.sc-bighero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.sc-bighero__inner{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:0 clamp(1.25rem,1rem + 2vw,3rem);display:flex;align-items:stretch;gap:2rem;min-height:clamp(540px,74vh,760px)}
+.sc-bighero__content{flex:1 1 58%;align-self:center;padding:clamp(3.5rem,7vh,5.5rem) 0}
+.sc-bighero__badge{display:inline-flex;align-items:center;gap:.55rem;font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);border:1.5px solid rgba(255,255,255,.18);border-radius:9999px;padding:.55rem 1.1rem;margin:0 0 1.75rem;backdrop-filter:blur(4px)}
+.sc-bighero__dot{width:8px;height:8px;border-radius:50%;background:var(--brand,#F22F3A);box-shadow:0 0 10px rgba(242,47,58,.8);flex-shrink:0}
+.sc-bighero__title{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(3rem,7.2vw,6.25rem);line-height:.96;text-transform:uppercase;letter-spacing:.01em;color:#fff;margin:0}
+.sc-bighero__title em{font-style:normal;color:var(--brand,#F22F3A);text-shadow:0 0 40px rgba(242,47,58,.35)}
+.sc-bighero__sub{font-family:'Inter',sans-serif;font-size:clamp(.95rem,1.1vw,1.1rem);line-height:1.7;font-weight:500;color:rgba(255,255,255,.65);max-width:480px;margin:1.5rem 0 2.25rem}
+.sc-bighero__cta{display:flex;align-items:center;flex-wrap:wrap;gap:1.25rem}
+.sc-bighero__call{display:inline-flex;align-items:center;gap:.5rem;font-family:'Inter',sans-serif;font-size:.95rem;font-weight:700;color:#fff;text-decoration:none;white-space:nowrap;transition:color .2s ease}
+.sc-bighero__call:hover{color:var(--brand,#F22F3A)}
+.sc-bighero__ticks{display:flex;flex-wrap:wrap;gap:.6rem 1.75rem;list-style:none;margin:2.25rem 0 0;padding:1.5rem 0 0;border-top:1px solid rgba(255,255,255,.12)}
+.sc-bighero__ticks li{display:inline-flex;align-items:center;gap:.5rem;font-family:'Inter',sans-serif;font-size:.82rem;font-weight:600;color:rgba(255,255,255,.75);white-space:nowrap}
+.sc-bighero__ticks li span{color:var(--brand,#F22F3A);font-size:.75rem}
+/* cutout guy — feet on the bottom edge of the hero, red glow behind him */
+.sc-bighero__visual{flex:1 1 42%;position:relative;align-self:flex-end;display:flex;justify-content:center;min-width:0}
+.sc-bighero__glow{position:absolute;left:50%;bottom:-10%;transform:translateX(-50%);width:min(34vw,480px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(242,47,58,.28) 0%,rgba(242,47,58,.08) 45%,transparent 70%);pointer-events:none}
+.sc-bighero__guy{position:relative;display:block;height:clamp(380px,58vh,600px);width:auto;max-width:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45));pointer-events:none}
 
-/* mid-size laptops: shorter card needs a smaller headline */
-@media(min-width:861px) and (max-width:1150px){
-  .sch-hero{padding:24px 32px 48px}
-  .sch-card{min-height:350px}
-  .sch-title{font-size:clamp(28px,4.1vw,46px)}
-  .sch-cta{gap:.8rem}
-  .sch-cta .hwh-btn{padding:.7rem 1.4rem;font-size:.75rem}
-}
-
-/* tablets & phones: stack — framed photo on top, white panel below, still one connected shape */
+/* tablets & phones: stack — copy on top, guy anchored to the bottom edge below */
 @media(max-width:860px){
-  .sch-hero{padding:16px 16px 40px}
-  .sch-card{aspect-ratio:auto;height:auto;display:flex;flex-direction:column;padding:44px 14px 14px;border-radius:20px}
-  .sch-frame{position:relative;inset:auto;order:1;width:auto;height:clamp(240px,62vw,340px);border-width:10px;border-radius:18px 18px 0 0}
-  .sch-guy{height:110%;max-width:88%}
-  .sch-panel{position:relative;inset:auto;order:2;width:auto;margin-top:-1px;border-radius:0 0 18px 18px;padding:24px 22px 26px}
-  .sch-tagline{position:static;max-width:none;margin:0 0 14px;font-size:12px}
-  .sch-title{position:static;max-width:none;margin:0 0 20px;font-size:clamp(34px,10.5vw,48px)}
-  .sch-cta{position:static;flex-wrap:wrap;gap:.8rem}
+  .sc-bighero__inner{flex-direction:column;gap:0;min-height:0}
+  .sc-bighero__content{align-self:flex-start;padding:clamp(2.75rem,8vw,4rem) 0 .5rem}
+  .sc-bighero__badge{font-size:.62rem;letter-spacing:.1em}
+  .sc-bighero__title{font-size:clamp(2.9rem,11.5vw,4.25rem)}
+  .sc-bighero__ticks{gap:.5rem 1.25rem;margin-top:1.75rem;padding-top:1.25rem}
+  .sc-bighero__visual{align-self:center;width:100%;margin-top:1rem}
+  .sc-bighero__guy{height:clamp(260px,60vw,380px)}
+  .sc-bighero__glow{width:min(70vw,340px)}
 }
 
 /* small phones */
 @media(max-width:420px){
-  .sch-hero{padding:12px 10px 32px}
-  .sch-frame{border-width:8px}
-  .sch-cta .hwh-btn{padding:.75rem 1.5rem;font-size:.78rem}
+  .sc-bighero__cta .hwh-btn{padding:.8rem 1.6rem;font-size:.78rem}
+  .sc-bighero__call{font-size:.85rem}
 }
 </style>
 
@@ -363,68 +366,99 @@ get_header(); ?>
 </script>
 
 <!-- ══════════════════════════════════════════════════════
-     WHY CHOOSE US — Light bg, bold trust signals
+     WHY CHOOSE US — Two-box card (white panel + framed cutout)
      ══════════════════════════════════════════════════════ -->
-<section class="hwh-why" aria-label="Why choose Spicola Construction">
-    <div class="hwh-section-inner">
-        <div class="hwh-why__grid">
-            <div class="hwh-why__content reveal">
-                <span class="hwh-label">The Spicola Difference</span>
-                <h2 class="hwh-section-title">Why Tampa Bay<br>Chooses <em>Us</em></h2>
-                <p class="hwh-section-desc">We built our reputation one project at a time — delivering quality craftsmanship, honest pricing, and work that stands the test of time.</p>
-                <ul class="hwh-why__list">
-                    <li class="hwh-why__item">
-                        <span class="hwh-why__check" aria-hidden="true">✔</span>
-                        <div>
-                            <strong>Licensed General Contractor</strong>
-                            <p>Fully licensed CGC and insured for residential and commercial projects in Florida.</p>
-                        </div>
-                    </li>
-                    <li class="hwh-why__item">
-                        <span class="hwh-why__check" aria-hidden="true">✔</span>
-                        <div>
-                            <strong>Transparent Pricing</strong>
-                            <p>Detailed estimates before work begins. No surprises, no change-order games.</p>
-                        </div>
-                    </li>
-                    <li class="hwh-why__item">
-                        <span class="hwh-why__check" aria-hidden="true">✔</span>
-                        <div>
-                            <strong>10+ Years Experience</strong>
-                            <p>10+ years of construction expertise across residential, commercial, and renovation projects.</p>
-                        </div>
-                    </li>
-                    <li class="hwh-why__item">
-                        <span class="hwh-why__check" aria-hidden="true">✔</span>
-                        <div>
-                            <strong>On Time, On Budget</strong>
-                            <p>We respect your timeline and your investment — no delays, no excuses.</p>
-                        </div>
-                    </li>
-                </ul>
-                <a href="<?php echo esc_url(home_url('/about/')); ?>" class="hwh-btn hwh-btn--red">Meet Our Team →</a>
-            </div>
-            <div class="hwh-why__stats reveal">
-                <div class="hwh-why__stat-card">
-                    <span class="hwh-why__stat-num">100+</span>
-                    <span class="hwh-why__stat-lbl">Projects Completed</span>
+<section class="schw" id="why-us" aria-label="Why choose Spicola Construction">
+    <div class="schw-card reveal">
+        <div class="schw-panel">
+            <span class="schw-label">The Spicola Difference</span>
+            <h2 class="schw-title">Why Tampa Bay<br>Chooses Us</h2>
+            <p class="schw-desc">We built our reputation one project at a time — delivering quality craftsmanship, honest pricing, and work that stands the test of time.</p>
+            <ul class="hwh-why__list">
+                <li class="hwh-why__item">
+                    <span class="hwh-why__check" aria-hidden="true">✔</span>
+                    <div>
+                        <strong>Licensed General Contractor</strong>
+                        <p>Fully licensed CGC and insured for residential and commercial projects in Florida.</p>
+                    </div>
+                </li>
+                <li class="hwh-why__item">
+                    <span class="hwh-why__check" aria-hidden="true">✔</span>
+                    <div>
+                        <strong>Transparent Pricing</strong>
+                        <p>Detailed estimates before work begins. No surprises, no change-order games.</p>
+                    </div>
+                </li>
+                <li class="hwh-why__item">
+                    <span class="hwh-why__check" aria-hidden="true">✔</span>
+                    <div>
+                        <strong>10+ Years Experience</strong>
+                        <p>10+ years of construction expertise across residential, commercial, and renovation projects.</p>
+                    </div>
+                </li>
+                <li class="hwh-why__item">
+                    <span class="hwh-why__check" aria-hidden="true">✔</span>
+                    <div>
+                        <strong>On Time, On Budget</strong>
+                        <p>We respect your timeline and your investment — no delays, no excuses.</p>
+                    </div>
+                </li>
+            </ul>
+            <a href="<?php echo esc_url(home_url('/about/')); ?>" class="hwh-btn hwh-btn--red">Meet Our Team →</a>
+        </div>
+        <div class="schw-frame">
+            <div class="schw-stats">
+                <div class="schw-stat">
+                    <span class="schw-stat-num">100+</span>
+                    <span class="schw-stat-lbl">Projects Completed</span>
                 </div>
-                <div class="hwh-why__stat-card">
-                    <span class="hwh-why__stat-num">50+</span>
-                    <span class="hwh-why__stat-lbl">5-Star Reviews</span>
+                <div class="schw-stat">
+                    <span class="schw-stat-num">50+</span>
+                    <span class="schw-stat-lbl">5-Star Reviews</span>
                 </div>
-                <div class="hwh-why__stat-card hwh-why__stat-card--accent">
-                    <span class="hwh-why__stat-num">10+</span>
-                    <span class="hwh-why__stat-lbl">Years Experience</span>
+                <div class="schw-stat schw-stat--accent">
+                    <span class="schw-stat-num">10+</span>
+                    <span class="schw-stat-lbl">Years Experience</span>
                 </div>
-                <div class="hwh-why__stat-card">
-                    <span class="hwh-why__stat-num">100%</span>
-                    <span class="hwh-why__stat-lbl">Satisfaction Guaranteed</span>
+                <div class="schw-stat">
+                    <span class="schw-stat-num">100%</span>
+                    <span class="schw-stat-lbl">Satisfaction Guaranteed</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+/* ── Why Choose Us: the two connected boxes on a job-site photo card ── */
+.schw{--schw-bw:clamp(12px,1.2vw,20px);padding:clamp(3.5rem,5.5vw,6rem) clamp(1rem,3vw,3rem);background:#fff}
+.schw-card{position:relative;display:flex;align-items:stretch;max-width:1280px;margin:0 auto;border-radius:26px;overflow:hidden;padding:clamp(16px,2.2vw,30px);background:linear-gradient(0deg,rgba(15,36,64,.55),rgba(15,36,64,.55)),url('https://spicolaconstruction.com/wp-content/uploads/2026/07/AdobeStock_323695209-scaled.jpeg') center/cover no-repeat;background-color:#45566e;box-shadow:0 18px 50px rgba(15,36,64,.18)}
+/* left box — solid white, holds the copy; square right edge joins the frame */
+.schw-panel{width:52%;background:#fff;border-radius:20px 0 0 20px;padding:clamp(1.75rem,3.2vw,3.25rem);position:relative;z-index:2}
+/* right box — see-through, thick white border; left edge tucks under the panel */
+.schw-frame{flex:1;border:var(--schw-bw) solid #fff;border-left:0;border-radius:0 20px 20px 0;display:flex;align-items:center;justify-content:center;padding:clamp(1.25rem,2.5vw,2.5rem);position:relative;z-index:1;min-width:0}
+.schw-label{display:inline-block;font-family:'Inter',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brand,#F22F3A);margin-bottom:.9rem}
+.schw-title{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(1.9rem,3.2vw,3.1rem);line-height:1.02;text-transform:uppercase;letter-spacing:.01em;color:#0d0d0d;margin:0 0 1rem}
+.schw-desc{font-family:'Inter',sans-serif;font-size:.92rem;line-height:1.7;font-weight:500;color:rgba(34,45,63,.65);margin:0 0 1.75rem;max-width:440px}
+.schw-panel .hwh-why__list{margin:0 0 2rem}
+/* stat tiles floating in the framed window */
+.schw-stats{display:grid;grid-template-columns:1fr 1fr;gap:clamp(.75rem,1.4vw,1.15rem);width:100%;max-width:440px}
+.schw-stat{background:rgba(255,255,255,.94);backdrop-filter:blur(4px);border-radius:14px;padding:clamp(1.15rem,1.8vw,1.6rem) 1rem;text-align:center;transition:transform .3s ease}
+.schw-stat:hover{transform:translateY(-3px)}
+.schw-stat--accent{background:var(--brand,#F22F3A)}
+.schw-stat-num{display:block;font-family:'Montserrat',sans-serif;font-size:clamp(1.7rem,2.4vw,2.3rem);font-weight:800;line-height:1;color:var(--brand-navy,#222D3F)}
+.schw-stat-lbl{display:block;font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:rgba(34,45,63,.55);margin-top:.5rem}
+.schw-stat--accent .schw-stat-num,.schw-stat--accent .schw-stat-lbl{color:#fff}
+
+/* tablets & phones: stack — white panel on top, framed stats below, still one connected shape */
+@media(max-width:860px){
+  .schw{padding:clamp(2.5rem,7vw,3.5rem) 16px}
+  .schw-card{flex-direction:column;border-radius:20px;padding:14px}
+  .schw-panel{width:auto;border-radius:18px 18px 0 0;padding:1.75rem 1.5rem 2rem}
+  .schw-frame{border-left:var(--schw-bw) solid #fff;border-top:0;border-radius:0 0 18px 18px;border-width:10px;padding:1.5rem 1.25rem}
+  .schw-stats{max-width:none}
+}
+</style>
 
 <!-- ══════════════════════════════════════════════════════
      RECENT WORKS — Portfolio showcase, gradient bg
