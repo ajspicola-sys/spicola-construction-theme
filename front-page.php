@@ -82,7 +82,7 @@ get_header(); ?>
 /* cutout guy — feet on the bottom edge of the hero, red glow behind him */
 .sc-bighero__visual{flex:1 1 42%;position:relative;align-self:flex-end;display:flex;justify-content:center;min-width:0}
 .sc-bighero__glow{position:absolute;left:50%;bottom:-10%;transform:translateX(-50%);width:min(34vw,480px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(242,47,58,.28) 0%,rgba(242,47,58,.08) 45%,transparent 70%);pointer-events:none}
-.sc-bighero__guy{position:relative;display:block;height:clamp(380px,58vh,600px);width:auto;max-width:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45));pointer-events:none}
+.sc-bighero__guy{position:relative;display:block;height:clamp(430px,66vh,680px);width:auto;max-width:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 24px 40px rgba(0,0,0,.45));pointer-events:none}
 
 /* tablets & phones: stack — copy on top, guy anchored to the bottom edge below */
 @media(max-width:860px){
@@ -92,7 +92,7 @@ get_header(); ?>
   .sc-bighero__title{font-size:clamp(2.9rem,11.5vw,4.25rem)}
   .sc-bighero__ticks{gap:.5rem 1.25rem;margin-top:1.75rem;padding-top:1.25rem}
   .sc-bighero__visual{align-self:center;width:100%;margin-top:1rem}
-  .sc-bighero__guy{height:clamp(260px,60vw,380px)}
+  .sc-bighero__guy{height:clamp(290px,66vw,420px)}
   .sc-bighero__glow{width:min(70vw,340px)}
 }
 
